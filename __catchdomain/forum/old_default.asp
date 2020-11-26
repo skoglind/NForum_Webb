@@ -1,0 +1,1 @@
+<% Response.Redirect("http://www.n-forum.se/avdelning/forum/") %>

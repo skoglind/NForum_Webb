@@ -1,0 +1,31 @@
+#main .content {
+  height:           1200px;
+}
+
+.onerowtext {
+  overflow:         hidden;
+  height:           25px;
+}
+
+.boxes {
+  margin:           5px;
+}
+
+.forum {
+  overflow:         hidden;
+}
+
+.forum .databox {
+  margin-left:      10px;
+  margin-right:     9px;
+}
+
+.forum ul {
+  margin-left:      10px;
+  margin-right:     9px;
+  padding:          1px;
+}
+
+.forum ul li {
+  padding:          4px;
+}

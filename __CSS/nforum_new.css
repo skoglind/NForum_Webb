@@ -1,0 +1,2456 @@
+/* PAGE */
+html {
+  margin-left: -1px;
+  overflow-Y: scroll;
+}
+
+@media all and (-webkit-min-device-pixel-ratio:10000), not all and (-webkit-min-device-pixel-ratio:0)
+{
+  head~body *{ margin-left: -1px;}
+}
+
+p{font:10px Verdana, Arial, Sans-serif;color:#333;padding:0 15px 0 15px;margin:0 0 10px 0;}
+a{text-decoration:none;color:#0076a8;}
+a:hover{color:#000;}
+h1,h2,h3,h4,h5,h6{padding:0 15px 0 15px;color:#000;font-family:Arial;}
+h1{margin:0 0 10px 0;padding:2px 0 2px 0;}
+h2{margin:0 0 14px 0;font-size:14px;}
+h3{margin:0 0 12px 0;font-size:12px;}
+ul{padding:0;margin:0;}
+li{padding:0;margin:0;font:11px Arial;color:#666;}
+img{border:none;}
+p.imgInner{text-align:center;}
+img.imgInner{max-width: 620px;}
+p.imgInnerDB{width:100%;text-align:center;}
+
+a.flash_a_red {
+  background-color: #A00;
+  color:            #FFF;
+  padding:          6px 8px 6px 8px;
+  border:           solid 1px #FFF;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+}
+
+a.flash_a_red:hover {
+  background-color: #FFF;
+  color:            #A00 !important;
+  border-color:     #A00;
+}
+
+a.flash_a_green {
+  background-color: #0A0;
+  color:            #FFF;
+  padding:          6px 8px 6px 8px;
+  border:           solid 1px #FFF;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+}
+
+a.flash_a_green:hover {
+  background-color: #FFF;
+  color:            #0A0 !important;
+  border-color:     #0A0;
+}
+
+div.imgInnerDB {
+  float:            left;
+  width:            422px; 
+  padding:          10px 65px 10px 65px;
+  background-color: #EEE;
+  margin:           0 0 12px 0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+img.imgInnerDB {
+  float:            left;
+  width:            400px; 
+  padding:          10px;
+  border:           solid 1px #CCC;
+  background-color: #FFF;
+  margin:           2px 0 12px 0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+/* ul.postlist{list-style:circle; padding:0;margin:-20px 0 0 35px;}
+ul.postlist li{font: 12px Arial;color:#666;padding:0;margin:0;} */
+
+form{padding:0;margin:0;}
+input{font:10px Verdana, Arial, Sans-serif;color:#000;}
+select{font:10px Verdana, Arial, Sans-serif;color:#000;}
+textarea{font:10px Verdana, Arial, Sans-serif;color:#000;}
+
+body {
+  /* background-color: #283d47; */
+  background:       #FFF url('http://grafik.n-forum.se/top_bg.gif') center repeat-y;
+  margin:           0 0 0 0;
+  padding:          0;
+  font:             10px Verdana, Arial, Sans-serif;
+}
+
+#NFORUM {
+  width:            980px;
+  margin:           0 auto 0 auto;
+}
+
+#YAH_Inner {
+  float:            left;
+  width:            980px;
+  padding:          0 0 0 0;
+}
+
+#YAH_Inner .nf_userbar {
+  float:            left;
+  background:       #000 url('http://grafik.n-forum.se/usermenu_bg.gif') repeat-x;
+  width:            968px;
+  padding:          0 5px 0 5px;
+  overflow:         hidden;
+  border:           solid 1px #FFF;
+}
+
+#YAH_Inner .nf_userbar ul {
+  float:            left;
+  list-style:       none;
+}
+
+#YAH_Inner .nf_userbar ul li {
+  float:            left;
+  overflow:         hidden;
+  height:           31px;
+}
+
+#YAH_Inner .nf_userbar ul li p {
+  float:            left;
+  font:             bold 12px Arial;
+  color:            #d8d049;
+  padding:          7px 0 9px 0;
+  margin:           0;
+}
+
+#YAH_Inner .nf_userbar ul li a {
+  float:            left;
+  font:             bold 12px Arial;
+  color:            #FFF;
+  padding:          8px 8px 8px 8px;
+}
+
+#YAH_Inner .nf_userbar ul li a:hover {
+  color:            #d8d049;
+}
+
+#YAH_Inner .nf_userbar .nf_loginbar {
+  float:            left;
+  padding:          2px;
+  color:            #FFF;
+}
+
+#YAH_Inner .nf_userbar .nf_loginbar input.text {
+  float:            left;
+  border:           solid 1px #000;
+  background-color: #FFF;
+  color:            #AAA;
+  font:             12px Arial;
+  padding:          1px;
+  margin:           3px;
+}
+
+#YAH_Inner .nf_userbar .nf_loginbar input.chk {
+  float:            left;
+  margin:           5px 2px 5px 5px;
+}
+
+#YAH_Inner .nf_userbar .nf_loginbar label {
+  float:            left;
+  font:             12px Arial;
+  padding:          2px 2px 2px 2px;
+  margin:           2px 2px 2px 0;
+}
+
+#YAH_Inner .nf_userbar .nf_loginbar input.btn {
+  float:            left;
+  width:            80px;
+  font:             bold 11px Arial;
+  margin:           2px;
+}
+
+#YAH_Inner .nf_logo {
+  float:            left;
+  background:       #FFF url('http://grafik.n-forum.se/toplogo.jpg') 0 0 no-repeat;
+  width:            980px;
+  height:           80px;
+  padding:          0;
+  overflow:         hidden;
+  border-bottom:    solid 1px #679eb0;
+  border-top:       solid 1px #679eb0;
+}
+
+#YAH_Inner .nf_logo a.nf_logoA {
+  float:            left; 
+  width:            190px;
+  height:           60px;
+  margin-left:      15px;
+  margin-top:       10px;
+}
+
+#YAH_Inner .nf_logo .nf_searchbox {
+  float:            right;
+  width:            180px;
+  height:           45px;
+  padding:          25px 10px 10px 10px;
+  background:       #FFF url('http://grafik.n-forum.se/search_bg.gif') no-repeat;
+  overflow:         hidden;
+  border-left:      solid 1px #679eb0;
+}
+
+#YAH_Inner .nf_logo .nf_searchbox select {
+  float:            left;
+  background-color: #FFF;
+  border:           solid 1px #AAA;
+  font:             11px Arial;
+  color:            #333;
+  width:            178px;
+  margin:           1px;
+  padding:          1px;
+}
+
+#YAH_Inner .nf_logo .nf_searchbox input.sbox {
+  float:            left;
+  background-color: #FFF;
+  border:           solid 1px #AAA;
+  font:             11px Arial;
+  color:            #333;
+  width:            122px;
+  margin:           1px;
+  padding:          2px;
+}
+
+#YAH_Inner .nf_logo .nf_searchbox input.sbut {
+  float:            left;
+  font:             bold 10px Arial;
+  color:            #333;
+  width:            50px;
+  height:           22px;
+  margin:           0;
+}
+
+#YAH_Inner .nf_logo .nf_banner img {
+  float:            left;
+  border:           none;
+}
+
+#YAH_Inner .nf_menu {
+  float:            left;
+  background:       #84b9cb url('http://grafik.n-forum.se/menu_sd.gif') bottom repeat-x;
+  width:            938px;
+  margin:           0 auto 0 auto;
+  padding:          0 20px 0 20px;
+  overflow:         hidden;
+  border-left:      solid 1px #FFF;
+  border-right:     solid 1px #FFF;
+  border-top:       solid 1px #FFF;
+}
+
+#YAH_Inner .nf_menu ul {
+  float:            left;
+  list-style:       none;
+  padding-left:     1px;
+  /* border-left:      solid 1px #679eb0; */
+  border-right:     solid 1px #c1e6f3;
+  background:       transparent url('http://grafik.n-forum.se/menu_line.gif') left -1px no-repeat;
+}
+
+#YAH_Inner .nf_menu ul li {
+  float:            left;
+  border-left:      solid 1px #c1e6f3;
+  height:           36px;
+  overflow:         hidden;
+  background:       transparent url('http://grafik.n-forum.se/menu_line.gif') right no-repeat;
+  border-bottom:    solid 1px #FFF;
+}
+
+#YAH_Inner .nf_menu ul li.c {
+  background:       transparent url('http://grafik.n-forum.se/menu_sel.gif') right no-repeat;
+  border-bottom:    solid 1px #679fb1;
+}
+
+#YAH_Inner .nf_menu ul li a {
+  float:            left;
+  font:             bold 14px Arial;
+  color:            #FFF;
+  padding:          10px 10px 10px 10px;
+}
+
+#YAH_Inner .nf_menu ul li:hover {
+  background-color: #679eb0;
+}
+
+#YAH_Inner .nf_menu ul li:hover a {
+  color:            #FFF;
+}
+
+#YAH_Inner .nf_submenu {
+  float:            left;
+  background-color: #84b9cb;
+  width:            958px;
+  height:           29px;
+  margin:           0 auto 0 auto;
+  padding:          0 10px 0 10px;
+  overflow:         hidden;
+  background:       #FFF url('http://grafik.n-forum.se/submenu_bg2.gif') repeat-x;
+  border-left:      solid 1px #FFF;
+  border-right:     solid 1px #FFF;
+}
+
+#YAH_Inner .nf_submenu ul {
+  float:            left;
+  list-style:       none;
+  padding:          5px 0 6px 0;
+}
+
+#YAH_Inner .nf_submenu ul li {
+  float:            left;
+  overflow:         hidden;
+  border-right:     solid 1px #4c8598;
+}
+
+#YAH_Inner .nf_submenu ul li a {
+  float:            left;
+  font:             bold 12px Arial;
+  color:            #FFF;
+  padding:          1px 6px 2px 6px;
+}
+
+#YAH_Inner .nf_submenu ul li a:hover {
+  color:            #c6ebaf;
+}
+
+#YAH_Inner .nf_submenu ul li.last {border-right: none;}
+
+#NFORUM_HOLDER{
+  float:            left;
+  width:            980px;
+  padding:          0 0 0 0;
+}
+  
+#page{
+  float:            left;
+  width:            980px;
+  padding:          0 0 0 0;
+  margin:           0 0 0 0;
+  background:       #FFF url('http://grafik.n-forum.se/main_bg.gif') top repeat-x;
+  border-bottom:    solid 1px #679eb0;
+  border-top:       solid 1px #679eb0;
+}
+
+.postmain {
+  float:            left;
+  margin:           0 0 0 210px; 
+  background-color: #FFF; 
+  width:            980px;
+}
+
+#events{
+  float:            left;
+  width:            978px; 
+  margin:           0 0 0 10px;
+  background-color: #789aa6;
+  padding:          20px 0 5px 0;
+  border:           solid 1px #FFF;
+}
+
+#bottom{
+  float:            left;
+  width:            978px; 
+  height:           72px;
+  margin:           0 0 0 0;
+  background-color: #84b9cb;
+  padding:          20px 0 5px 0;
+  border:           solid 1px #FFF;
+}
+
+#bottom .left {
+  padding:          13px 0 0 20px; 
+  font:             9px Arial; 
+  color:            #333;
+}
+
+#bottom .right{
+  width:            200px;
+  padding:          10px 20px 10px 40px;
+}
+
+#bottom ul{
+  float:            left;
+  list-style:       none;
+}
+
+#bottom ul li{
+  float:            left;
+  margin:           0;
+  width:            100px;
+}
+
+#bottom a{
+  color:            #333;
+}
+
+#bottom a:hover{
+  text-decoration: underline;
+}
+
+div.right{float:right;}
+div.left{float:left;}
+
+#main{
+  float:            left;
+  width:            980px;
+  padding:          0 0 0 0;
+}
+
+#main .content{
+  float:            left;
+  width:            964px;
+  min-height:       750px;
+  margin:           0;
+  padding:          0 8px 10px 8px;
+  overflow:         hidden;
+}
+
+#main .content .info{width:214px;padding:5px 8px 5px 8px;background-color:#FFF;color:#AAA;font:11px Arial;border-left:solid 1px #FFF;}
+
+div.timefly{font:bold 10px Arial;text-align:center;position:fixed;top:30px;left:15px;padding:8px;width:56px;height:12px;background:transparent url('http://grafik.n-forum.se/timer.png') no-repeat;}
+
+#enlargescreen{
+  position:           absolute;
+  display:            none;
+  top:                -500px;
+  left:               -500px;
+  width:              650px;
+  height:             490px;
+  padding:            5px;
+  z-index:            2;
+  border:             solid 2px #2b7886;
+  background-color:   #FFF;
+  overflow:           hidden;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+#enlargescreen img{
+  width:              640px;
+  height:             480px;
+  padding:            5px;
+  background-color:   #FFF;
+}
+
+div.popBox {
+  display:          none;
+  position:         fixed;
+  z-index:          1;
+  top:              50%;
+  left:             50%;
+  margin-left:      -235px;  
+  margin-top:       -250px;         
+  background:       transparent url('http://grafik.n-forum.se/textbehind.png');
+  width:            410px;
+  padding:          30px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+div.popBox .popBox_Inner {
+  float:            left;
+  width:            400px;
+  overflow:         hidden;
+  background-color: #FFF;
+  padding:          10px 5px 15px 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+div.popBox .popBox_Inner .popBox_Inner_Split {
+  float:            left;
+  width:            400px;
+  border-bottom:    solid 1px #DDD;
+  height:           5px;
+  margin-bottom:    5px;
+  font-size:        0;
+}
+
+div.popBox .popBox_Inner p {
+  float:            left;
+  margin:           0 0 6px 0;
+  padding:          0;
+}
+
+div.popBox .popBox_Inner h3 {
+  float:            left;
+  width:            380px;
+  padding:          0;
+  margin:           5px 10px 0 10px;
+  font:             bold 18px Arial;
+  color:            #000;
+}
+
+div.popBox .popBox_Inner h4 {
+  float:            left;
+  width:            380px;
+  padding:          0;
+  margin:           0 10px 5px 10px;
+  font:             bold 14px Arial;
+  color:            #666;
+}
+
+div.popBox .popBox_Inner p {
+  float:            left;
+  width:            380px;
+  padding:          0;
+  margin:           6px 10px 6px 10px;
+  font:             bold 12px Arial;
+  color:            #008;
+}
+
+div.popBox .popBox_Inner label {
+  float:            left;
+  width:            80px;
+  font:             bold 12px Arial;
+  margin:           4px 5px 4px 10px;
+}
+
+div.popBox .popBox_Inner select {
+  float:            left;
+  width:            286px;
+  font:             12px Arial;
+  margin:           2px 10px 2px 5px;
+  padding:          2px;
+}
+
+div.popBox .popBox_Inner input.text {
+  float:            left;
+  width:            280px;
+  font:             12px Arial;
+  margin:           2px 10px 2px 5px;
+  padding:          2px;
+}
+
+div.popBox .popBox_Inner input.chk {
+  float:            left;
+  margin:           5px 260px 5px 10px;
+}
+
+div.popBox .popBox_Inner textarea {
+  float:            left;
+  width:            280px;
+  font:             12px Arial;
+  margin:           2px 10px 2px 5px;
+  padding:          2px;
+}
+
+div.popBox .popBox_Buttons {
+  float:            left;
+  width:            400px;
+  overflow:         hidden;
+  padding:          0;
+  margin-top:       25px;
+}
+
+div.popBox .popBox_Buttons input {
+  float:            left;
+  font:             bold 14px Arial;
+  margin:           0 10px 0 0;
+  width:            100px;
+  height:           40px;
+}
+
+div.popBox .popBox_Frame {
+  float:            left;
+  display:          none;
+  border:           none;
+  width:            400px;
+  height:           150px;
+  background-color: #FFF;
+  padding:          5px;
+  margin-top:       25px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+  
+
+div.jsFrameBox{
+  display:          none;
+  position:         fixed;
+  z-index:          1;
+  top:              30%;
+  left:             30%;
+  border:           solid 1px #BBB;
+  background-color: #CCC;
+  width:            400px;
+  padding:          1px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+}
+
+div.jsFrameBox .FrameBox_Title{width:388px;padding:4px 6px 4px 6px;font:bold 12px Arial;color:#333;overflow:hidden;}
+div.jsFrameBox .FrameBox_Buttons{width:392px;padding:4px;text-align:center;}
+div.jsFrameBox iframe{background-color:#FFF;border:none;width:400px;height:150px;}
+
+/* NEW CSS 2.0 */
+.nf_datablock {
+  float:            left;
+  padding:          0 10px 0 10px;
+  margin:           0;
+  overflow:         hidden;
+}
+  
+.nf_size_full {width:944px;}
+.nf_size_half {width:462px;} /* 414 */
+.nf_size_onethird {width:301px;} /* 237 */
+.nf_size_onethird_last {width:302px;} /* 288 */
+.nf_size_twothird {width:622px;} /* 591 */
+
+.nf_datablock input {
+  float:            left;
+  font:             12px Arial;
+  margin:           5px;
+}
+
+.nf_datablock select {
+  float:            left;
+  font:             12px Arial;
+  margin:           5px;
+}
+
+.nf_datablock textarea {
+  float:            left;
+  font:             12px Arial;
+  margin:           5px;
+}
+
+.nf_datablock h1 {
+  float:            left;
+  width:            100%;
+  padding:          10px 0 0 0;
+  margin:           5px 0 5px 0;
+  font:             bold 26px Tahoma, Arial;
+  color:            #6e92b8;
+}
+
+.nf_datablock h1 .nf_extitel {
+  float:            right;
+  color:            #AAA; 
+}
+
+.nf_datablock h1 .nf_extitel a {
+  color:            #AAA;
+}
+
+.nf_datablock h1 .nf_extitel a:hover {
+  color:            #2a5974;
+}
+
+.nf_datablock h2 {
+  float:            left;
+  width:            100%;
+  padding:          0 0 0 0;
+  margin:           0 0 0 0;
+  font:             bold 16px Arial;
+  color:            #666;
+}
+
+.nf_datablock h3 {
+  float:            left;
+  width:            100%;
+  padding:          0 0 0 0;
+  margin:           0 0 5px 0;
+  font:             bold 14px Arial;
+  color:            #AAA;
+}
+
+.nf_datablock h4 {
+  float:            left;
+  width:            100%;
+  padding:          0 0 0 0;
+  margin:           0 0 5px 0;
+  font:             bold 11px Arial;
+  color:            #AAA;
+}
+
+.nf_datablock h4 a {
+  color:            #AAA;
+}
+
+.nf_datablock h4 a:hover {
+  color:            #333;
+}
+
+.nf_datablock .nf_msg, .nf_datablock .nf_msg_full, .nf_datablock .nf_infomsg {
+  float:            left;
+  width:            582px;
+  padding:          20px 20px 20px 20px;
+  margin:           10px 0 10px 0;
+  background-color: #EEE;
+  overflow:         hidden;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.nf_datablock .nf_msg {width:582px;}
+.nf_datablock .nf_infomsg {background-color: #93c56a;}
+.nf_datablock .nf_msg_full {width:904px;}
+.nf_datablock .nf_msg_third {width:261px;}
+
+.nf_datablock .nf_msg p, .nf_datablock .nf_msg_full p, .nf_datablock .nf_infomsg p {
+  float:            left;
+  width:            100%;
+  margin:           6px 0 6px 0;
+  padding:          0;
+  font:             12px Arial;
+  color:            #333;
+}
+
+.nf_datablock .nf_msg ul.nf_rowlist {
+  float:            left;
+  width:            572px;
+  padding:          5px;
+  margin:           0;
+  list-style:       none;
+  background-color: #FFF;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.nf_datablock .nf_msg ul.nf_rowlist li {
+  float:            left;
+  width:            566px;
+  padding:          3px;
+  margin:           0;
+  font:             11px Arial;
+  cursor:           pointer;
+}
+
+.nf_datablock .nf_msg ul.nf_rowlist li img {
+  float:            left;
+  width:            16px;
+  height:           11px;
+  margin-right:     5px;
+  margin-top:       1px;
+}
+
+.nf_datablock .nf_msg ul.nf_rowlist li a {
+  float:            left;
+  margin-right:     5px;
+}
+
+.nf_datablock .nf_msg ul.nf_rowlist li span {
+  float:            left;
+}
+
+.nf_datablock .nf_msg ul.nf_rowlist li span img {
+  float:            left;
+  width:            16px;
+  height:           16px;
+}
+
+.nf_datablock .nf_msg ul.nf_rowlist li .nf_collectionbar {
+  float:            right; 
+  margin:           1px 8px 1px 4px; 
+  height:           16px; 
+  width:            61px;
+  background-repeat: no-repeat; 
+  
+}
+
+.nf_datablock .nf_msg ul.nf_rowlist li .nf_collectionbar img {
+  float:            left; 
+  height:           12px; 
+  width:            12px;
+  margin:           2px 1px 0 2px;
+  padding:          0;
+}
+
+.nf_datablock .nf_msg ul.nf_rowlist li.c {
+  background-color: #EEE;
+  font-weight:      bold;
+}
+
+.nf_datablock .nf_msg ul.nf_rowlist li:hover {
+  background-color: #DDD;
+}
+
+.nf_datablock .nf_msg p.nf_pretend_rowlist {
+  float:            left;
+  width:            572px;
+  padding:          15px 5px 15px 5px;
+  margin:           0;
+  list-style:       none;
+  background-color: #FFF;
+  text-align:       center;
+  font-style:       italic;
+  color:            #333;     
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.nf_datablock .nf_bigbutton {
+  padding:          0 0 0 0;
+  margin:           0;
+  width:            301px; 
+  height:           200px; 
+  overflow:         hidden;
+  background-color: #FFF;
+  background-repeat: no-repeat;
+  background-image: url('http://grafik.n-forum.se/icons/bigbuttons/off.png');
+}
+
+.nf_datablock .nf_bigbutton:hover {
+  background-image: url('http://grafik.n-forum.se/icons/bigbuttons/on.png');
+}
+
+.nf_datablock .nf_bigbutton a {
+  float:            left;
+  text-align:       center;
+  width:            301px;
+  height:           135px;
+  padding:          65px 0 0 0;
+  margin:           0;
+  font:             bold 48px Arial;
+  color:            #FFF;
+}
+
+.nf_datablock .nf_halfbutton {
+  padding:          0 0 0 0;
+  margin:           10px 0 0 0;
+  width:            301px; 
+  height:           100px; 
+  overflow:         hidden;
+  background-color: #FFF;
+  background-repeat: no-repeat;
+  background-image: url('http://grafik.n-forum.se/icons/bigbuttons/half_off.png');
+}
+
+.nf_datablock .nf_halfbutton:hover {
+  background-image: url('http://grafik.n-forum.se/icons/bigbuttons/half_on.png');
+}
+
+.nf_datablock .nf_halfbutton a {
+  float:            left;
+  text-align:       center;
+  width:            301px;
+  padding:          30px 0 0 0;
+  margin:           0;
+  font:             bold 32px Arial;
+  color:            #FFF;
+  height:           70px
+}
+
+.nf_datablock .nf_flash {
+  padding:          0 0 0 0;
+  width:            301px; 
+  height:           202px; 
+  overflow:         hidden;
+  background-color: #FFF;
+  background-repeat: no-repeat;
+}
+
+.nf_datablock .nf_flash a.nf_afill {
+  float:            left;
+  width:            100%;
+  height:           148px;
+}
+
+.nf_datablock .nf_flash .nf_flash_title {
+  float:            left; 
+  padding:          8px; 
+  width:            285px;
+  height:           36px;
+  overflow:         hidden;
+  background:       transparent url('http://grafik.n-forum.se/textbehind.png');
+  border-top:       solid 2px #FFF;
+  -webkit-border-bottom-right-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.nf_datablock .nf_flash .nf_flash_title span {
+  float:            left;
+  width:            285px;
+  padding:          0;
+  margin:           0;
+  font:             bold 10px Arial;
+  color:            #FFF;
+}
+
+.nf_datablock .nf_flash .nf_flash_title a {
+  float:            left;
+  width:            285px;
+  padding:          0;
+  margin:           0;
+  font:             bold 14px Arial;
+  color:            #84b9cb;
+  overflow:         hidden;
+}
+
+.nf_datablock .nf_flash .nf_flash_title a:hover {
+  color:            #FFF;
+}
+
+.nf_datablock .nf_forumflash {
+  padding:          0 0 0 0;
+  width:            301px; 
+  height:           202px; 
+  overflow:         hidden;
+  background-color: #FFF;
+}
+
+.nf_datablock .nf_forumflash ul {
+  float:            left;
+  padding:          0;
+  margin:           0;
+  width:            281px;
+  list-style:       none;
+}
+
+.nf_datablock .nf_forumflash ul li {
+  float:            left;
+  padding:          5px 8px 5px 8px;
+  margin:           0;
+  width:            285px;
+  height:           27px;
+  background-color: #518b9d;
+  border-top:       solid 2px #84b9cb;
+}
+
+.nf_datablock .nf_forumflash ul li span {
+  float:            left;
+  font:             bold 10px Arial;
+  color:            #c1e0ea;
+}
+
+.nf_datablock .nf_forumflash ul li a {
+  float:            left;
+  font:             bold 14px Arial;
+  color:            #FFF;
+  width:            285px;
+}
+
+.nf_datablock .nf_forumflash ul li a:hover {
+  color:            #c1e0ea;
+}
+
+.nf_datablock .nf_forumflash ul li.first {
+  border:           none;
+  height:           29px;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.nf_datablock .nf_forumflash ul li.last {
+  border-color:     #FFF;
+  background-color: #282828;
+  padding:          14px 8px 0 8px;
+  height:           30px;
+  -webkit-border-bottom-right-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.nf_datablock .nf_forumflash ul li.last a {
+  font:             bold 14px Arial;
+  color:            #84b9cb;
+}
+
+.nf_datablock .nf_forumflash ul li.last a:hover {
+  font:             bold 14px Arial;
+  color:            #FFF;
+}
+
+.nf_datablock .nf_largesearch {
+  padding-top:      10px; 
+  padding-bottom:   10px;
+}
+
+.nf_datablock .nf_infomsg p {color:#25430c;font-weight: bold;}
+
+.nf_datablock .nf_images {
+  float:            left;
+  width:            582px;
+  padding:          20px 20px 20px 20px;
+  margin:           10px 0 10px 0;
+  background-color: #EEE;
+  overflow:         hidden;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.nf_datablock .nf_images_full {
+  width:            904px;
+}
+
+.nf_datablock .nf_images p {
+  float:            left;
+  padding:          0;
+  margin:           3px 0 3px 0;
+  font:             12px Arial;
+  width:            100%;
+}
+
+.nf_datablock .nf_images .nf_editrow {
+  float:            left; 
+  width:            582px; 
+  background-color: #FFF;
+  margin:           2px 0 2px 0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.nf_datablock .nf_images .nf_editrow .nf_imgbutton {
+  float:            right; 
+  width:            16px; 
+  height:           18px; 
+  cursor:           pointer;
+}
+
+.nf_datablock .nf_images .nf_editrow p {
+  width:            461px;
+}
+
+.nf_datablock .nf_images img {
+  float:            left;
+  width:            80px;
+  height:           80px;
+  background-color: #FFF;
+  margin:           2px;
+  padding:          7px;
+  border:           solid 1px #DDD;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+
+.nf_datablock .nf_images .boxartblocker {
+  float:            left; 
+  width:            41px; 
+  height:           86px; 
+  margin:           2px;
+  background:       #FFF url('http://grafik.n-forum.se/boxart.png') center no-repeat;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.nf_datablock .nf_largeimage {
+  float:            left;
+  width:            582px;
+  padding:          20px 20px 20px 20px;
+  margin:           10px 0 10px 0;
+  background-color: #EEE;
+  overflow:         hidden;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.nf_datablock .nf_largeimage img {
+  float:            left;
+  width:            572px;
+  background-color: #FFF;
+  margin:           2px;
+  padding:          3px;
+  border:           none;
+}
+
+.nf_datablock .nf_forum .nf_post_msg .nf_post_prevtxt {
+  float:            left;
+  width:            552px; /* 602 */
+  padding:          5px 35px 5px 35px;
+  margin:           0;
+  overflow:         hidden;
+  background-color: #FFF;
+  border:           solid 1px #CCC;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.nf_datablock .nf_sharebox {
+  float:            left;
+  width:            596px; /* 622 */
+  padding:          5px 13px 5px 13px;
+  margin:           10px 0 0 0;
+  overflow:         hidden;
+  background-color: #FFF;
+}
+
+.nf_datablock .nf_text {
+  float:            left;
+  width:            596px; /* 622 */
+  padding:          5px 13px 5px 13px;
+  margin:           0;
+  overflow:         hidden;
+  background-color: #EEE;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.nf_datablock .nf_forum .nf_post_msg .nf_post_prevtxt p, .nf_datablock .nf_text p {
+  float:            left;
+  width:            100%;
+  margin:           8px 0 8px 0;
+  padding:          0;
+  font:             12px Verdana;
+  color:            #333;
+  line-height:      18px;
+}
+
+.nf_datablock .nf_forum .nf_post_msg .nf_post_prevtxt h3, .nf_datablock .nf_text h3 {
+  float:            left;
+  width:            100%;
+  margin:           18px 0 0 0;
+  padding:          0;
+  font:             bold 26px Arial;
+  color:            #3a7488;
+}
+
+.nf_datablock .nf_forum .nf_post_msg .nf_post_prevtxt ul, .nf_datablock .nf_text ul {
+  float:            left;
+  list-style:       none;
+  width:            548px;
+  padding:          2px 0 2px 0;
+  margin:           0;
+  overflow:         hidden;
+}
+
+.nf_datablock .nf_forum .nf_post_msg .nf_post_prevtxt ul li, .nf_datablock .nf_text ul li {
+  float:            left;
+  width:            503px;
+  padding:          2px 2px 2px 14px;
+  margin:           1px 15px 1px 15px;
+  font:             12px Verdana;
+  color:            #666;
+  overflow:         hidden;
+  border:           none;
+  cursor:           normal;
+  background:       transparent url('http://grafik.n-forum.se/bullet.png') 0 8px no-repeat;
+  line-height:      18px;
+}
+
+.nf_datablock .nf_forum .nf_post_msg .nf_post_prevtxt table, .nf_datablock .nf_text table {
+  float:            left;
+  width:            100%;
+  margin:           0 0 0 0;
+  padding:          0;
+  font:             12px Verdana;
+}
+
+.nf_datablock .nf_forum .nf_post_msg .nf_post_prevtxt tr, .nf_datablock .nf_text tr {
+  margin:           0 0 0 0;
+  padding:          0;
+  font:             12px Verdana;
+  background-color: #FFF;
+}
+
+.nf_datablock .nf_forum .nf_post_msg .nf_post_prevtxt td, .nf_datablock .nf_text td {
+  margin:           1px;
+  padding:          4px;
+  font:             12px Verdana;
+  background-color: #EEE;
+}
+
+.nf_datablock .nf_forum .nf_post_msg .nf_post_prevtxt th, .nf_datablock .nf_text th {
+  margin:           1px;
+  padding:          4px;
+  font:             bold 12px Verdana;
+  background-color: #DDD;
+  text-align:       left;
+}
+
+.nf_datablock .nf_form {
+  float:            left;
+  width:            602px;
+  padding:          5px 10px 5px 10px;
+  margin:           10px 0 10px 0;
+  background-color: #EEE;
+  overflow:         hidden;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.nf_datablock .nf_form p {
+  float:            left;
+  width:            582px;
+  padding:          10px 10px 0 10px;
+  font:             12px Arial;
+}
+
+.nf_datablock .nf_form .nf_falt {
+  float:            left;
+  width:            594px;
+  padding:          4px;
+}
+
+.nf_datablock .nf_form .nf_falt label {
+  float:            left;
+  width:            140px;
+  font:             bold 12px Arial;
+  color:            #000;
+  margin:           7px 0 0 0;
+}
+
+.nf_datablock .nf_forum .nf_post_msg .nf_picker {
+  float:            left;
+  font:             bold 12px Arial;
+  color:            #000;
+  margin:           0 2px 0 2px;
+  padding:          2px;
+  background-color: #FFF;
+  border:           solid 1px #DDD;
+}
+
+.nf_datablock .nf_forum .nf_post_msg .nf_picker input {
+  float:            left;
+  margin:           1px;
+  padding:          0;
+}
+
+.nf_datablock .nf_forum .nf_post_msg .nf_picker span {
+  float:            left;
+  margin:           0px 1px 1px 1px;
+}
+
+.nf_datablock .nf_form .nf_buttonbar input {
+  font-size:        10px;
+  margin:           0 2px 0 2px;
+}
+
+.nf_datablock .nf_form .nf_buttonbar .nf_buttonsplit {
+  float:            left;
+  margin:           2px 0 2px 0;
+  padding:          0;
+  color:            #AAA;
+  font:             bold 16px Arial;
+}
+
+.nf_datablock .nf_form .nf_buttons input {
+  float:            right;
+  width:            80px;
+  font-weight:      bold;
+}
+
+.nf_datablock .nf_form .nf_separator {
+  float:            left;
+  width:            582px;
+  margin:           0 10px 8px 10px;
+  height:           8px;
+  font-size:        0;
+  border-bottom:    solid 1px #DDD;
+}
+
+.nf_datablock .nf_minibox {
+  float:            left;
+  width:            281px;
+  padding:          10px 10px 10px 10px;
+  margin:           10px 0 0 0;
+  background:       #DDD url('http://grafik.n-forum.se/nf_gray.gif') top repeat-x;;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.nf_datablock .nf_minibox h4 {
+  float:            left;
+  width:            100%;
+  font:             bold 12px Arial;
+  color:            #666;
+  padding:          0 0 10px 0;
+  margin:           0;
+}
+
+.nf_datablock .nf_minibox .nf_inside {
+  float:            left;
+  width:            271px;
+  background-color: #FFF;
+  padding:          5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.nf_datablock .nf_minibox .nf_inside p {
+  float:            left;
+  width:            261px;
+  padding:          0 5px 0 5px;
+  margin:           5px 0 5px 0;
+  font:             11px Arial;
+  color:            #333;
+}
+
+.nf_datablock .nf_minibox .nf_inside img {
+  float:            left;
+  padding:          0 8px 0 0;
+  margin-top:       -3px;
+}
+
+.nf_datablock .nf_minibox .nf_inside .nf_separator {
+  float:            left;
+  width:            251px;
+  margin:           0 10px 8px 10px;
+  height:           8px;
+  font-size:        0;
+  border-bottom:    solid 1px #DDD;
+}
+
+.nf_datablock .nf_minibox .nf_inside .nf_selfinput_full, .nf_datablock .nf_minibox .nf_inside .nf_selfinput_third {
+  float:            left;
+  padding:          2px;
+}
+
+.nf_datablock .nf_minibox .nf_inside .nf_selfinput_full input, .nf_datablock .nf_minibox .nf_inside .nf_selfinput_third input {
+  float:            left;
+  padding:          1px;
+  margin:           1px;
+  font:             11px Arial;
+}
+
+.nf_datablock .nf_minibox .nf_inside .nf_selfinput_full input.btn, .nf_datablock .nf_minibox .nf_inside .nf_selfinput_third input.btn {
+  float:            right;
+  width:            80px;
+  font:             bold 11px Arial;
+}
+
+.nf_datablock .nf_minibox .nf_inside .nf_selfinput_full select, .nf_datablock .nf_minibox .nf_inside .nf_selfinput_third select {
+  float:            left;
+  padding:          1px;
+  margin:           1px;
+  font:             11px Arial;
+}
+
+.nf_datablock .nf_minibox .nf_inside .nf_selfinput_full label, .nf_datablock .nf_minibox .nf_inside .nf_selfinput_third label {
+  float:            left;
+  padding:          0;
+  margin:           4px 0 0 2px;
+  font:             11px Arial;
+}
+.nf_datablock .nf_minibox .nf_inside .nf_selfinput_full {width: 267px;}
+.nf_datablock .nf_minibox .nf_inside .nf_selfinput_third {width: 83px;}
+
+.nf_datablock .nf_minibox .nf_stylelist p {
+  float:            left;
+  width:            261px;
+  padding:          14px 5px 12px 5px;
+  margin:           0;
+  font:             bold 12px Arial;
+}
+
+.nf_datablock .nf_minibox .nf_stylelist ul {
+  float:            left;
+  list-style:       none;
+  width:            271px;
+}
+
+.nf_datablock .nf_minibox .nf_stylelist ul li {
+  float:            left;
+  width:            241px;
+  padding:          5px 5px 5px 25px;
+  cursor:           pointer;
+  border-bottom:    solid 1px #CCC;
+  font:             bold 10px Arial;
+  color:            #888;
+  background:       transparent url("http://grafik.n-forum.se/icons/dwtext.png") left no-repeat;
+  overflow:         hidden;
+}
+
+.nf_datablock .nf_minibox .nf_stylelist ul li.nf_style_c {
+  background-color: #EEE;
+}
+
+.nf_datablock .nf_minibox .nf_stylelist ul li a {
+  float:            left;
+  width:            100%;
+  font:             bold 12px Arial;
+  color:            #2c5973;
+}
+
+.nf_datablock .nf_minibox .nf_stylelist ul li.last {
+  border-bottom:    none;
+}
+
+.nf_datablock .nf_minibox .nf_stylelist ul li:hover {
+  background-color: #EEE;
+}
+
+.nf_datablock .nf_minibox .nf_stylelist ul li:hover a {
+  color:            #353535;
+}
+
+.nf_datablock .nf_inside .nf_rowhead {
+  float:            left;
+  width:            267px;
+  font:             bold 12px Arial;
+  padding:          2px;
+  overflow:         hidden;
+  margin-top:       3px;
+  border-bottom:    solid 1px #DDD;
+}
+
+.nf_datablock .nf_inside .nf_row {
+  float:            left;
+  width:            255px;
+  padding:          2px 8px 2px 8px;
+  font:             11px Arial;
+  overflow:         hidden;
+  margin-bottom:    3px;
+}
+
+.nf_datablock .nf_smilies {
+  text-align:       center;
+}
+
+.nf_datablock .nf_smilies img {
+  float:            left;
+  width:            17px !important;
+  height:           17px !important;
+  padding:          6px !important;
+  margin:           0 !important;
+  cursor:           pointer;
+}
+
+.nf_datablock .nf_minibox img.insideimg {
+  float:            left;
+  width:            53px;
+  height:           53px;
+  background-color: #EEE;
+  margin:           3px;
+  padding:          3px;
+  border:           none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.nf_datablock .nf_minibox .nf_boxart img {
+  float:            left;
+  width:            267px;
+  padding:          2px;
+  margin:           0;
+}
+
+.nf_datablock .nf_minibox .nf_ages img {
+  float:            left;
+  width:            60px;
+  height:           60px;
+  padding:          0 0 0 0;
+  margin:           0 19px 0 19px;
+}
+
+.nf_datablock .nf_minibox .nf_grades span {
+  float:            left;
+  font:             bold 11px Arial;
+  margin:           2px 0 0 0;
+}
+
+.nf_datablock .nf_minibox .nf_grades img {
+  float:            right;
+  width:            16px;
+  height:           16px;
+  padding:          0;
+  margin:           0;
+}
+
+.nf_datablock .nf_minibox .nf_inside p.nf_center {text-align: center;}
+.nf_datablock .nf_minibox .nf_inside p.nf_bold {font-weight: bold;}
+.nf_datablock .nf_minibox .nf_inside p.nf_huge {font: bold 18px Verdana;}
+
+.nf_datablock .nf_minibox .nf_imgbox img {
+  float:            left;
+  width:            80px;
+  height:           80px;
+  background-color: #FFF;
+  margin:           2px;
+  padding:          3px;
+  border:           none;
+}
+
+.nf_datablock .nf_green {background: #bedb90 url('http://grafik.n-forum.se/nf_green.gif') top repeat-x;}
+.nf_datablock .nf_green h4 {color: #47641a;}
+
+.nf_datablock .nf_blue {background: #85b5d1 url('http://grafik.n-forum.se/nf_blue.gif') top repeat-x;}
+.nf_datablock .nf_blue h4 {color: #184863;}
+
+.nf_datablock .nf_red {background: #e6b598 url('http://grafik.n-forum.se/nf_red.gif') top repeat-x;;}
+.nf_datablock .nf_red h4 {color: #965f3e;}
+
+.nf_datablock ul.nf_list {
+  float:            left;
+  overflow:         hidden;
+  list-style:       none;
+  width:            622px;
+}
+
+.nf_datablock ul.nf_list li {
+  float:            left;
+  overflow:         hidden;
+  width:            612px;
+  padding:          0 5px 10px 5px;
+  margin:           10px 0 0 0;
+  border-bottom:    solid 1px #EEE;
+}
+
+.nf_datablock ul.nf_list li.nf_comments {
+  width:            582px;
+  padding:          10px;
+  margin:           0;
+  border-bottom:    solid 1px #DDD;
+}
+
+.nf_datablock ul.nf_list li.nf_odd {
+  background-color: #f9f9f9;
+} 
+
+.nf_datablock ul.nf_list li.nf_comments span.nf_comments_name {
+  float:            left;
+  font:             bold 12px Arial;
+}
+
+.nf_datablock ul.nf_list li.nf_comments span.nf_comments_date {
+  float:            right;
+  font:             12px Arial;
+}
+
+.nf_datablock ul.nf_list li.nf_comments p {
+  float:            left;
+  width:            582px;
+  margin:           8px 0 8px 0;
+  padding:          0;
+  font:             12px Verdana;
+  line-height:      18px;
+}
+
+.nf_datablock ul.nf_list li.nf_data_c {
+  padding-top:      5px;
+  padding-bottom:   5px;
+  background-color: #EEE;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.nf_datablock ul.nf_list li.nf_listsplit {
+  font:             bold 12px Arial;
+  color:            #000;
+  background-color: #CCC;
+  margin:           10px 0 0 0;
+  padding:          5px 5px 5px 5px;
+  text-align:       center;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.nf_datablock ul.nf_list li .nf_thumb {
+  float:            left;
+  width:            80px;
+  padding:          0;
+}
+
+.nf_datablock ul.nf_list li .nf_thumb img {
+  float:            left;
+  width:            70px;
+  height:           70px;
+  padding:          2px;
+  margin:           2px;
+  border:           solid 1px #DDD;
+  background-color: #FFF;
+}
+
+.nf_datablock ul.nf_list li .nf_thumb img.ex:hover {
+  border-bottom:    solid 2px #2b7886;
+  border-top:       solid 2px #2b7886;
+  border-left:      solid 2px #2b7886;
+  width:            67px;
+  height:           65px;
+  padding:          5px;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.nf_datablock ul.nf_list li .nf_icon {
+  float:            left;
+  width:            79px;
+  height:           50px;
+  padding:          0;
+  border-right:     dotted 1px #CCC;
+}
+
+.nf_datablock ul.nf_list li .nf_icon img {
+  float:            left;
+  width:            50px;
+  height:           50px;
+  margin:           0 14px 0 15px;
+}
+
+.nf_datablock ul.nf_list li .nf_front_news p {background: transparent url('http://grafik.n-forum.se/flash_news.png');}
+.nf_datablock ul.nf_list li .nf_front_rec p {background: transparent url('http://grafik.n-forum.se/flash_rec.png');}
+.nf_datablock ul.nf_list li .nf_front_art p {background: transparent url('http://grafik.n-forum.se/flash_art.png');}
+
+.nf_datablock ul.nf_list li .nf_front {
+  float:            left;
+  width:            180px;
+  padding:          0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.nf_datablock ul.nf_list li .nf_front p {
+  float:            left;
+  width:            160px;
+  margin:           0;
+  padding:          10px 10px 10px 10px;
+  text-align:       left;
+  font:             bold 12px Arial;
+  color:            #333;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.nf_datablock ul.nf_list li .nf_tiny {
+  float:            left;
+  width:            40px;
+  padding:          0;
+  background-color: #FFF;
+  color:            #000;
+  overflow:         hidden;
+}
+
+.nf_datablock ul.nf_list li .nf_tiny img {
+  float:            left;
+  width:            24px;
+  height:           24px;
+  padding:          2px;
+  background-color: #FFF;
+  border:           solid 1px #DDD;
+  color:            #000;
+  overflow:         hidden;
+}
+
+.nf_datablock ul.nf_list li .nf_mini {
+  float:            left;
+  width:            80px;
+  padding:          0;
+  background-color: #FFF;
+  color:            #000;
+  overflow:         hidden;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.nf_datablock ul.nf_list li .nf_mini p {
+  float:            left;
+  width:            46px;
+  margin:           7px 5px 5px 0;
+  padding:          2px 0 0 0;
+  font:             bold 10px Arial;
+}
+
+.nf_datablock ul.nf_list li .nf_mini img {
+  float:            left;
+  width:            16px;
+  height:           16px;
+  margin:           7px 5px 7px 5px;
+  padding:          0;
+  text-align:       center;
+  font:             bold 10px Arial;
+}
+
+.nf_datablock ul.nf_list li .nf_header {
+  float:            left;
+  width:            160px;
+  padding:          10px;
+  background-color: #3c88a8;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.nf_datablock ul.nf_list li .nf_header span {
+  float:            left;
+  width:            160px;
+  font:             bold 12px Arial;
+  color:            #FFF;
+  text-align:       center;
+} 
+
+.nf_datablock ul.nf_list li .nf_header span.nf_big {font-size: 25px;}
+
+.nf_datablock ul.nf_list li .nf_header .nf_xtra {
+  float:            left;
+  overflow:         hidden;
+  width:            154px;
+  padding:          3px;
+  margin:           6px 0 0 0;
+  background-color: #FFF;
+  font:             bold 9px Arial;
+  text-align:       center;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.nf_datablock ul.nf_list li .nf_data {
+  float:            left;
+  width:            412px; /* 512 */
+  padding:          0 10px 0 10px;
+}
+
+.nf_datablock ul.nf_list li .nf_data h3 {
+  float:            left;
+  width:            100%;
+  padding:          0;
+  margin:           0;
+  font:             bold 15px Arial;
+}
+
+.nf_datablock ul.nf_list li .nf_data h4 {
+  float:            left;
+  width:            100%;
+  padding:          0;
+  margin:           0;
+  font:             bold 13px Arial;
+}
+
+.nf_datablock ul.nf_list li .nf_data h5 {
+  float:            left;
+  width:            100%;
+  padding:          0;
+  margin:           0;
+  font:             bold 12px Arial;
+}
+
+.nf_datablock ul.nf_list li .nf_data h6 {
+  float:            left;
+  width:            100%;
+  padding:          0;
+  margin:           0;
+  font:             11px Arial;
+}
+
+.nf_datablock ul.nf_list li .nf_data h3 a, .nf_datablock ul.nf_list li .nf_data h4 a, .nf_datablock ul.nf_list li .nf_data h5 a, .nf_datablock ul.nf_list li .nf_data h6 a {
+  color:            #2c92bc;
+  text-decoration:  none;
+}
+
+.nf_datablock ul.nf_list li .nf_data h3 a:hover, .nf_datablock ul.nf_list li .nf_data h4 a:hover, .nf_datablock ul.nf_list li .nf_data h5 a:hover, .nf_datablock ul.nf_list li .nf_data h6 a:hover {
+  color:            #333;
+}
+
+.nf_datablock ul.nf_list li .nf_data p {
+  float:            left;
+  font:             12px Arial;
+  color:            #000;
+  line-height:      16px;
+  margin:           6px 0 6px 0;
+  padding:          0;
+  width:            100%;
+}
+
+.nf_datablock ul.nf_list li .nf_data span {
+  float:            left;
+  width:            100%;
+  font:             12px Arial;
+  color:            #000;
+}
+
+.nf_datablock ul.nf_list li .nf_data span a {
+  text-decoration:  none;
+  color:            #000;
+}
+
+.nf_datablock ul.nf_list li .nf_data span a:hover {
+  text-decoration:  none;
+  color:            #2c92bc;
+}
+
+.nf_datablock ul.nf_list li .nf_data span.nf_gray {color: #888;}
+.nf_datablock ul.nf_list li .nf_data span.nf_bold {font-weight: bold;}
+.nf_datablock ul.nf_list li .nf_data span.nf_small {font-size: 10px;}
+.nf_datablock ul.nf_list li .nf_data span.nf_medium {font-size: 11px;}
+.nf_datablock ul.nf_list li .nf_data span.nf_right {float: right !important;}
+
+.nf_datablock ul.nf_list li .nf_data div.nf_morebtn {
+  text-align:       left;
+  width:            100%;
+  padding:          0;
+  margin:           10px 0 0 0;
+}
+
+.nf_datablock ul.nf_list li .nf_data div.nf_morebtn a {
+  float:            right;
+  padding:          4px 10px 4px 10px;
+  margin:           2px;
+  color:            #333;
+  background-color: #EEE;
+  border:           solid 1px #DDD;
+  font:             bold 12px Arial;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;  
+}
+
+.nf_datablock ul.nf_list li .nf_data div.nf_morebtn a.nf_hint {
+  color:            #333;
+  background-color: #c0f99a;
+  border:           solid 1px #82cd50;
+}
+
+.nf_datablock ul.nf_list li .nf_data div.nf_morebtn a:hover {
+  background-color: #b6def7;
+  border-color:     #76b1d6;
+  color:            #000;
+}
+
+.nf_datablock ul.nf_list li .nf_extend {
+  float:            left;
+  width:            136px; /* 512 */
+  padding:          2px 2px 2px 2px;
+  text-align:       right;
+}
+
+.nf_datablock ul.nf_list li .nf_extend img {
+  float:            left;
+  margin:           2px;
+}
+
+.nf_datablock .nf_paging, .nf_datablock .nf_alfa {
+  float:            left;
+  width:            612px;
+  overflow:         hidden;
+  padding:          5px;
+  margin:           10px 0 10px 0;
+  text-align:       center;
+  font:             12px Arial;
+  color:            #BBB;
+  background-color: #DDD;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.nf_datablock .nf_alfa {
+  margin:           10px 0 0 0;
+}
+
+.nf_datablock .nf_paging a {
+  text-decoration:  none;
+  color:            #2c92bc;
+  font-size:        14px;
+}
+
+.nf_datablock .nf_paging a.c {
+  font-weight:      bold;
+  font-size:        18px;
+}
+
+.nf_datablock .nf_paging a:hover {
+  text-decoration:  none;
+  color:            #000;
+}
+
+.nf_datablock .nf_paging_full {width: 934px;}
+
+.nf_datablock .nf_alfa a {
+  text-decoration:  none;
+  color:            #2c92bc;
+  font-size:        11px;
+}
+
+.nf_datablock .nf_alfa a.c {
+  font-weight:      bold;
+  font-size:        16px;
+}
+
+.nf_datablock .nf_alfa a:hover {
+  text-decoration:  none;
+  color:            #000;
+}
+
+/* FORUM */
+
+.nf_datablock .nf_forum {
+  float:            left;
+  width:            924px;
+  padding:          10px 10px 10px 10px;
+  margin:           5px 0 5px 0;
+  background-color: #DDD;
+  overflow:         hidden;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.nf_datablock .nf_forum p {
+  float:            left;
+  font:             12px Arial;
+  margin:           0;
+  padding:          2px;
+}
+
+.nf_datablock .nf_forum p.nf_p_full {
+  width:            910px;
+  margin:           0 5px 5px 5px;
+  font:             bold 14px Arial;
+}
+
+.nf_datablock .nf_forum_title p {
+  font-weight:      bold;
+}
+
+.nf_datablock .nf_forum_bottom p {
+  font-size:        12px;
+  width:            920px;
+}
+
+.nf_datablock .nf_forum_lankar {
+  background-color: #3d6793;
+}
+
+.nf_datablock .nf_forum_lankar p {
+  float:            right;
+  text-align:       right; 
+  color:            #5781ad; 
+  font-weight:      bold;
+}
+
+.nf_datablock .nf_forum_lankar a {
+  color:            #FFF;
+}
+
+.nf_datablock .nf_forum_lankar a:hover {
+  color:            #ede8a0;
+}
+
+.nf_datablock .nf_forum_title p.nf_right {text-align: right;}
+.nf_datablock .nf_forum_title p.nf_center {text-align: center;}
+
+.nf_datablock .nf_forum ul {
+  float:            left;
+  width:            914px;
+  margin:           0;
+  padding:          5px;
+  list-style:       none;
+  background-color: #FFF;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.nf_datablock .nf_forum ul li {
+  float:            left;
+  width:            910px;
+  margin:           0;
+  padding:          2px;
+  font:             12px Arial;
+  overflow:         hidden;
+  border-bottom:    solid 1px #DDD;
+}
+
+.nf_datablock .nf_forum ul li.nf_last {
+  border-bottom:    none;
+}
+
+.nf_datablock .nf_forum ul li:hover {
+  background-color: #EEE;
+}
+
+.nf_datablock .nf_forum ul li .nf_onerow {
+  float:            left;
+  width:            906px;
+  padding:          8px 2px 8px 2px;
+  overflow:         hidden;
+  font:             bold 16px Arial;
+}
+
+.nf_datablock .nf_forum ul li .nf_icon {
+  float:            left;
+  width:            23px;
+  height:           18px;
+  padding:          11px 1px 11px 1px;
+  overflow:         hidden;
+}
+
+.nf_datablock .nf_forum ul li .nf_icon img {
+  float:            left;
+  width:            23px;
+  height:           18px;
+  border:           none;
+}
+
+.nf_datablock .nf_forum ul li .nf_amne {
+  float:            left;
+  width:            611px;
+  height:           36px;
+  padding:          2px;
+  overflow:         hidden;
+}
+
+.nf_datablock .nf_forum ul li .nf_amne img {
+  float:            left;
+  height:           11px;
+  width:            13px;
+  margin-top:       3px;
+}
+
+.nf_datablock .nf_forum ul li .nf_amne a {
+  float:            left;
+  font-size:        12px;
+  padding:          2px;
+}
+
+.nf_datablock .nf_forum ul li .nf_amne p {
+  float:            left;
+  width:            594px;
+  padding:          2px 2px 2px 15px;
+  color:            #666;
+  font-size:        11px;
+}
+
+.nf_datablock .nf_forum ul li .nf_amne span {
+  float:            left;
+  width:            569px;
+  padding:          2px 2px 2px 20px;
+  color:            #666;
+  font:             11px Arial;
+}
+
+.nf_datablock .nf_forum ul li .nf_amne span a {
+  float:            none;
+  font:             bold 11px Arial;
+  padding:          0;
+}
+
+.nf_datablock .nf_forum ul li .nf_amne_short {width: 591px;}
+.nf_datablock .nf_forum ul li .nf_amne_locked a {color: #AAA;}
+
+.nf_datablock .nf_forum ul li .nf_stat {
+  float:            left;
+  width:            76px;
+  height:           16px;
+  padding:          12px 2px 12px 2px;
+  overflow:         hidden;
+  text-align:       center;
+  font-size:        11px;
+  color:            #999;
+}
+
+.nf_datablock .nf_forum ul li .nf_user {
+  float:            left;
+  width:            96px;
+  height:           16px;
+  padding:          12px 2px 12px 2px;
+  overflow:         hidden;
+  text-align:       center;
+  font-size:        11px;
+  color:            #999;
+}
+
+.nf_datablock .nf_forum ul li .nf_latest {
+  float:            left;
+  width:            106px;
+  height:           28px;
+  padding:          6px 2px 6px 2px;
+  overflow:         hidden;
+  text-align:       right;
+  font-size:        11px;
+  color:            #666;
+}
+
+/* TRÅD */
+
+.nf_datablock .nf_forum .nf_post_msg {
+  float:            left;
+  width:            724px;
+  overflow:         hidden;
+}
+
+.nf_datablock .nf_forum .nf_post_msg textarea {
+  float:            left;
+  width:            701px;
+  height:           250px;
+  font:             12px Verdana;
+  margin:           2px 6px 2px 6px;
+  background-color: #FFF;
+  border:           solid 1px #DDD;
+  padding:          2px;
+  color:            #000;
+  line-height:      18px;
+}
+
+.nf_datablock .nf_forum .nf_post_msg label {
+  float:            left;
+  width:            120px;
+  font:             bold 12px Arial;
+  margin:           4px 6px 4px 6px;
+  padding:          2px;
+  color:            #000;
+}
+
+.nf_datablock .nf_forum .nf_post_msg input.text {
+  float:            left;
+  width:            565px;
+  font:             14px Verdana;
+  margin:           2px 6px 2px 6px;
+  background-color: #FFF;
+  border:           solid 1px #DDD;
+  padding:          2px;
+  color:            #000;
+}
+
+.nf_datablock .nf_forum .nf_post_msg input.checkbox {
+  float:            left;
+  margin:           7px 550px 7px 7px;
+}
+
+.nf_datablock .nf_forum .nf_post_msg select {
+  float:            left;
+  width:            571px;
+  font:             14px Verdana;
+  margin:           2px 6px 2px 6px;
+  background-color: #FFF;
+  border:           solid 1px #DDD;
+  padding:          2px;
+  color:            #000;
+}
+
+.nf_datablock .nf_forum .nf_post_msg .nf_buttonbar {
+  float:            left;
+  width:            708px;
+  font:             12px Verdana;
+  margin:           6px;
+  padding:          2px;
+}
+
+.nf_datablock .nf_forum .nf_post_msg .nf_buttonbar input {
+  float:            left;
+  font:             12px Arial;
+  margin:           2px;
+}
+
+.nf_datablock .nf_forum .nf_post_msg .nf_buttonbar .nf_buttonsplit {
+  float:            left;
+  width:            1px;
+  height:           14px;
+  margin:           6px 6px 6px 6px;
+  background-color: #CCC;
+  font-size:        0;
+}
+
+.nf_datablock .nf_forum .nf_post_btn {
+  float:            left;
+  width:            200px;
+  overflow:         hidden;
+}
+
+.nf_datablock .nf_forum .nf_post_btn input {
+  float:            right;
+  width:            195px;
+  height:           62px;
+  font:             18px Arial;
+  margin:           2px;
+}
+
+.nf_datablock .nf_forum .nf_trad {
+  float:            left;
+  width:            924px;
+  background:       #FFF url('http://grafik.n-forum.se/forum_trad_bg.png') right repeat-y;
+  overflow:         hidden;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.nf_datablock .nf_forum .nf_trad_content {
+  float:            left;
+  width:            700px;
+  padding:          10px 10px 10px 10px;
+  margin:           0;
+  overflow:         hidden;
+}
+
+.nf_datablock .nf_forum .nf_trad_content p {
+  float:            left;
+  width:            700px;
+  padding:          8px 0 8px 0;
+  margin:           0;
+  font:             12px Verdana;
+  overflow:         hidden;
+  line-height:      18px;
+}
+
+.nf_datablock .nf_forum .nf_trad_content h3 {
+  float:            left;
+  width:            100%;
+  margin:           18px 0 0 0;
+  padding:          0;
+  font:             bold 26px Arial;
+  color:            #3a7488;
+}
+
+.nf_datablock .nf_forum .nf_trad_content p.nf_trad_title {
+  font:             bold 11px Arial;
+  color:            #4d7ea1;
+  overflow:         hidden;
+}
+
+.nf_datablock .nf_forum .nf_trad_content p.nf_trad_chg {
+  font:             bold 10px Arial;
+  color:            #AAA;
+  overflow:         hidden;
+}
+
+.nf_datablock .nf_forum .nf_trad_content p.nf_trad_sign {
+  font:             bold 10px Arial;
+  color:            #4d7ea1;
+  overflow:         hidden;
+  height:           13px;
+}
+
+.nf_datablock .nf_forum .nf_trad_content ul {
+  float:            left;
+  list-style:       none;
+  width:            700px;
+  padding:          2px 0 2px 0;
+  margin:           0;
+  overflow:         hidden;
+}
+
+.nf_datablock .nf_forum .nf_trad_content ul li {
+  float:            left;
+  width:            654px;
+  padding:          2px 2px 2px 14px;
+  margin:           1px 15px 1px 15px;
+  font:             12px Verdana;
+  color:            #666;
+  overflow:         hidden;
+  border:           none;
+  cursor:           normal;
+  background:       transparent url('http://grafik.n-forum.se/bullet.png') 0 8px no-repeat;
+  line-height:      18px;
+}
+
+.nf_datablock .nf_forum .nf_trad_content table {
+  float:            left;
+  width:            100%;
+  margin:           0 0 0 0;
+  padding:          0;
+  font:             12px Verdana;
+}
+
+.nf_datablock .nf_forum .nf_trad_content table tr {
+  margin:           0 0 0 0;
+  padding:          0;
+  font:             12px Verdana;
+  background-color: #FFF;
+}
+
+.nf_datablock .nf_forum .nf_trad_content table tr td {
+  margin:           1px;
+  padding:          4px;
+  font:             12px Verdana;
+  background-color: #EEE;
+}
+
+.nf_datablock .nf_forum .nf_trad_content table tr th {
+  margin:           1px;
+  padding:          4px;
+  font:             bold 12px Verdana;
+  background-color: #DDD;
+  text-align:       left;
+}
+
+.nf_datablock .nf_forum .nf_trad_content .nf_trad_logg {
+  float:            left;
+  width:            690px;
+  background-color: #DDD;
+  padding:          5px;
+  margin:           6px 0 6px 0;
+  display:          none;
+  overflow:         hidden;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.nf_datablock .nf_forum .nf_trad_content .nf_trad_logg p {
+  float:            left;
+  width:            690px;
+  padding:          5px 0 5px 0;
+  font:             11px Arial;
+}
+
+.nf_datablock .nf_forum .nf_trad_content .quote {
+  float:            left;
+  width:            657px;
+  padding:          5px;
+  margin:           0 10px 0 10px;
+  background-color: #EEE;
+  border-left:      solid 2px #CCC;
+  border-right:     dotted 1px #CCC;
+  border-top:       dotted 1px #CCC;
+  border-bottom:    dotted 1px #CCC;
+  overflow:         hidden;
+  font:             12px Arial;
+  color:            #333;
+}
+
+.nf_datablock .nf_forum .nf_trad_content .quote p {
+  width:            657px;
+}
+
+.nf_datablock .nf_forum .nf_trad_data {
+  float:            left;
+  width:            179px;
+  padding:          10px 10px 10px 10px;
+  margin:           0 0 0 5px;
+  overflow:         hidden;
+}
+
+.nf_datablock .nf_forum .nf_trad_data .nf_post_btn {
+  float:            left;
+  width:            179px;
+  overflow:         hidden;
+}
+
+.nf_datablock .nf_forum .nf_trad_data .nf_post_btn input {
+  float:            right;
+  width:            174px;
+  height:           62px;
+  font:             18px Arial;
+  margin:           2px;
+}
+
+.nf_datablock .nf_forum .nf_trad_data .nf_trad_avatar {
+  float:            left;
+  width:            104px;
+  padding:          0 37px 2px 38px;
+}
+
+.nf_datablock .nf_forum .nf_trad_data .nf_trad_avatar img {
+  float:            left;
+  width:            100px;
+  height:           100px;
+  border:           solid 1px #666;
+  padding:          1px;
+  background-color: #FFF;
+}
+
+.nf_datablock .nf_forum .nf_trad_data .nf_trad_username {
+  float:            left;
+  width:            177px;
+  padding:          1px;
+  text-align:       center;
+  font:             bold 12px Arial;
+}
+
+.nf_datablock .nf_forum .nf_trad_data .nf_trad_egentitel {
+  float:            left;
+  width:            177px;
+  padding:          1px;
+  text-align:       center;
+  font:             bold 11px Arial;
+  color:            #666;
+}
+
+.nf_datablock .nf_forum .nf_trad_data .nf_trad_otherinfo {
+  float:            left;
+  width:            169px;
+  padding:          4px;
+  margin:           2px 0 2px 0;
+  overflow:         hidden;
+  border:           solid 1px #888;
+  background-color: #FFF;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.nf_datablock .nf_forum .nf_trad_data .nf_trad_otherinfo p {
+  float:            left;
+  width:            169px;
+  padding:          1px 0 1px 0;
+  font:             11px Arial;
+  overflow:         hidden;
+}
+
+.nf_datablock .nf_forum .nf_trad_control {
+  float:            left;
+  width:            904px;
+  padding:          10px 10px 10px 10px;
+  margin:           5px 0 0 0;
+  overflow:         hidden;
+}
+
+.nf_datablock .nf_forum .nf_trad_control .nf_trad_admin {
+  float:            left;
+  font:             11px Verdana;
+  color:            #CCC;
+  width:            334px;
+  border-top:       solid 1px #CCC;
+  padding:          4px 8px 4px 8px;
+  background-color: #EEE;
+}
+
+.nf_datablock .nf_forum .nf_trad_control .nf_trad_user {
+  float:            left;
+  font:             11px Verdana;
+  color:            #CCC;
+  width:            334px;
+  text-align:       right;
+  border-top:       solid 1px #CCC;
+  padding:          4px 8px 4px 8px;
+  background-color: #EEE;
+}
+
+.nf_datablock .nf_forum .nf_trad_control .nf_trad_user .red, .nf_datablock .nf_forum .nf_trad_control .nf_trad_admin .red {
+  font-weight:      bold;
+  color:            #800;
+}
+
+.nf_datablock .nf_forum .nf_trad_control .nf_trad_date {
+  float:            right;
+  font:             bold 11px Arial;
+  width:            179px;
+  text-align:       center;
+  color:            #333;
+}

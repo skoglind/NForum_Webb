@@ -1,0 +1,340 @@
+#NFORUM_HOLDER {
+  width:            1000px;
+  margin:           0 auto 0 auto;
+  /* display:          none; */
+}
+
+#USERBAR {
+  position:         fixed;
+  width:            100%;
+  padding:          1px 0 5px 0;
+  height:           22px;
+  background:       #3c79a5 url('/design/userbar.png') repeat-x;
+  overflow:         hidden;
+  top:              0;
+  left:             0;
+}
+
+#USERBAR .fld {
+  float:            left;
+  padding:          2px;
+  margin-top:       2px;
+}
+
+#USERBAR .fld input {
+  float:            left;
+  font:             9px Arial;
+  padding:          1px;
+  border:           solid 1px #244a64;
+  background-color: #FFF;
+  color:            #244a64;
+}
+
+#USERBAR .chk {
+  float:            left;
+  margin-top:       2px;
+}
+
+#USERBAR .chk input {
+  float:            left;
+  margin:           3px 2px 0 2px;
+  padding:          0;
+}
+
+#USERBAR .chk span {
+  float:            left;
+  margin:           5px 0 0 2px;
+  font:             9px Arial;
+  color:            #FFF;
+}
+
+#USERBAR .btn {
+  float:            left;
+  margin-top:       1px;
+}
+
+#USERBAR .btn input {
+  float:            left;
+  font:             10px Arial;
+  padding:          1px;
+  margin:           1px 0 0 3px;
+  width:            55px;
+}
+
+#USERBAR .text {
+  float:            left;
+  padding:          1px;
+  margin:           5px 8px 0 8px;
+  color:            #1d5177;
+}
+
+#USERBAR .text a {
+  color:            #FFF;
+}
+
+#USERBAR .text a:hover {
+  color:            #85abc6;
+}
+
+div.right {
+  float:            right;
+}
+
+div.left {
+  float:            left;
+}
+
+#designtop {
+  float:            left;
+  width:            980px;
+  height:           45px;
+  padding:          0 10px 0 10px;
+  background:       transparent url('/design/designtop.png') bottom no-repeat;
+}
+
+#page {
+  float:            left;
+  width:            980px;
+  padding:          5px 10px 0 10px;
+  background:       transparent url('/design/bg.png') repeat-y;
+}
+
+#bottom {
+  float:            left;
+  width:            1000px;
+  height:           93px;
+  background:       transparent url('/design/designbottom.png') top no-repeat;
+}
+
+#bottom .right {
+  width:            200px;
+  padding:          10px 20px 10px 40px;
+}
+
+#bottom ul li {
+  float:            left;
+  margin:           0 0 0 0;
+  width:            100px;
+}
+
+#menu {
+  float:            left;
+  width:            180px;
+  padding:          0 10px 0 10px;
+}
+
+#logo {
+  float:            left;
+  background:       transparent url('/design/minilogo.png') no-repeat; 
+  width:            170px; 
+  height:           48px; 
+  margin:           0 5px 15px 5px;
+}
+
+#logo a {
+  display:          block;
+  width:            100%;
+  height:           100%;
+}
+
+#menu .line {
+  float:            left;
+  font-size:        0px;
+  height:           1px;
+  width:            170px;
+  background-color: #DDD;
+  border-bottom:    solid 1px #FFF;
+  margin:           2px 0 2px 0;
+}
+
+#menu .searchbox {
+  float:            left;
+  width:            160px;
+  height:           54px;
+  overflow:         hidden;
+  padding:          10px 5px 10px 5px;
+  margin:           0 0 0 0;
+  background:       transparent url('/design/menu_top.png') no-repeat;
+}
+
+#menu .searchbox span {
+  font:             11px Arial;
+  color:            #AAA;
+}
+
+#menu .searchbox select {
+  font:             10px Arial;
+  width:            160px;
+  margin-bottom:    3px;
+}
+
+#menu .searchbox input.sbox {
+  font:             10px Verdana;
+  padding:          2px;
+  background-color: #FFF;
+  border:           solid 1px #BBB;
+  width:            110px;
+  color:            #666;
+}
+
+#menu .searchbox input.sbut {
+  font:             bold 10px Arial;
+  width:            40px;
+}
+
+#menu ul {
+  float:            left;
+  list-style:       none;
+  width:            170px;
+  margin:           2px 0 2px 0;
+}
+
+#menu ul li {
+  font:             11px Verdana;
+  padding:          2px 5px 2px 5px;
+  width:            158px;
+  cursor:           pointer;
+  background-color: transparent;
+  border:           solid 1px transparent;
+  color:            #b9b8b8;
+  margin:           1px 0 1px 0;
+}
+
+#menu ul li.c {
+  border-color:     #8dacc3;
+  background:       #FFF url('/design/menu.png') repeat-x;
+}
+
+#menu ul li:hover {
+  border-color:     #8dacc3;
+  background-color: #FFF;
+}
+
+#menu ul li a {
+  display:          block; 
+  color:            #333;
+  width:            100%; 
+  height:           100%;
+}
+
+#main {
+  float:            left;
+  width:            760px;
+  padding:          0 10px 6px 10px;
+}
+
+#main .minimenu {
+  float:            left;
+  width:            760px;
+  margin:           6px 0 0 0;
+}
+
+#main .minimenu ul {
+  float:            left;
+  list-style:       none;
+}
+
+#main .minimenu ul li {
+  float:            left;
+  font:             11px Verdana;
+  margin:           0 1px 1px 0;
+  background-color: #84B9CB;
+  -moz-border-radius-topright: 8px;
+  -moz-border-radius-topleft: 8px;
+  -webkit-border-top-right-radius: 8px;
+  -webkit-border-top-left-radius: 8px;
+}
+
+#main .minimenu ul li.inact {
+  background-color: #EEE;
+}
+
+#main .minimenu ul li:hover {
+  border-top:       solid 2px #518393;
+}
+
+#main .minimenu ul li.inact:hover {
+  border-top:       solid 2px #E1E1E1;
+}
+
+#main .minimenu ul li.c:hover {
+  border-top:       solid 2px #286073;
+}
+
+#main .minimenu ul li.inact a {
+  text-decoration:  none;
+  color:            #D1D1D1;
+}
+
+#main .minimenu ul li:hover a {
+  padding-top:      2px;
+}
+
+#main .minimenu ul li.c {
+  margin-bottom:    0;
+  padding-bottom:   1px;
+  background-color: #679EB0;
+}
+
+#main .minimenu ul li a {
+  display:          block;
+  color:            #FFF;
+  padding:          4px 9px 4px 9px;
+}
+
+#main .minimenu ul li.c a {
+  color:            #FFF;
+}
+
+#main .behindwhereami {
+  float:            left;
+  background-color: #FFF;
+  background-image: url('/design/bg_white.png');
+  background-repeat: repeat-y;
+  background-position: right;
+}
+
+#main .whereami {
+  float:            left;
+  width:            740px;
+  padding:          5px 10px 6px 10px;
+  margin:           0 0 0 0;
+  background-color: #679EB0;
+  color:            #FFF;
+  font:             11px Arial;
+  /* border-bottom:    solid 1px #CCC; */
+  -moz-border-radius-topright: 8px;
+  -moz-border-radius-bottomleft: 8px;
+  -webkit-border-top-right-radius: 8px;
+  -webkit-border-bottom-left-radius: 8px;
+}
+
+#main .whereami a {
+  color:            #FFF;
+}
+
+#main .whereami a:hover {
+  color:            #B5D5E0;
+}
+
+#main .content {
+  float:            left;
+  width:            760px;
+  min-height:       750px;
+  margin:           0 0 0 0;
+  padding:          5px 0 0 0;
+  background-color: #FFF;
+  background-repeat: repeat-y;
+  background-position: right;
+  -moz-border-radius-bottomleft: 8px;
+  -webkit-border-bottom-left-radius: 8px;
+}
+
+#main .content .info {
+  width:            214px;
+  padding:          0 8px 15px 8px;
+  background-color: #679EB0;
+  color:            #AAA;
+  font:             11px Arial;
+  border-left:      solid 1px #FFF;
+}

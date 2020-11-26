@@ -1,0 +1,152 @@
+form {
+  padding:          0;
+  margin:           0;
+}
+
+input {
+  font:             10px Verdana, Arial, Sans-serif;
+  color:            #000;
+}
+
+select {
+  font:             10px Verdana, Arial, Sans-serif;
+  color:            #000;
+}
+
+textarea {
+  font:             10px Verdana, Arial, Sans-serif;
+  color:            #000;
+}
+
+input.text {
+  background-color: #FFF;
+  border:           solid 1px #CCC;
+  padding:          1px;
+}
+
+input.button {
+  width:            80px;
+  height:           22px;
+  padding:          1px;
+}
+
+div.forms .formlock {
+  float:            left;
+  width:            481px;
+}
+
+div.forms .formbtbar {
+  float:            left;
+  width:            470px;
+  padding:          2px;
+  text-align:       center;
+}
+
+div.forms .formmsg {
+  float:            left;
+  width:            473px;
+  padding:          4px;
+}
+
+div.forms .formmsg textarea {
+  float:            left;
+  width:            460px;
+  height:           250px;
+  padding:          2px;
+  font:             11px Courier New;
+}
+
+div.forms .formtitel {
+  float:            left;
+  width:            132px;
+  padding:          4px;
+  font:             bold 10px Arial;
+  margin:           2px 0 2px 0;
+}
+
+div.forms .formfalt {
+  float:            left;
+  width:            325px;
+  padding:          4px;
+  margin:           2px 0 2px 0;
+}
+
+div.forms .formfalt input {
+  float:            left;
+  width:            320px;
+  font:             10px Arial;
+  padding:          1px;
+}
+
+div.forms .formfalt input.chk {
+  width:            12px;
+  height:           12px;
+  padding:          0;
+  margin:           0;
+}
+
+div.forms .formfalt select {
+  float:            left;
+  width:            323px;
+  font:             10px Arial;
+  padding:          1px;
+}
+
+div.forms .formpick {
+  float:            left;
+  width:            325px;
+  padding:          4px;
+  margin:           2px 0 2px 0;
+}
+
+div.forms .formpick .pickbox {
+  float:            left; 
+  text-align:       center; 
+  background-color: #DDD; 
+  margin:           1px; 
+  padding:          3px 8px 3px 8px;
+}
+
+div.forms .formpick .pickbox input {
+  padding:          0; 
+  margin:           0;
+}
+
+div.forms .formpick .pickbox span {
+  display:          block;
+}
+
+div.forms .formborder {
+  float:            left;
+  width:            473px;
+  border-bottom:    solid 1px #EEE;
+  height:           0;
+  font:             0px Arial;
+  margin:           4px 0 4px 0;
+}
+
+div.forms .formsubmit {
+  float:            left;
+  width:            465px;
+  text-align:       right;
+  padding:          4px;
+  margin:           2px 0 2px 0;
+}
+
+div.forms .formsubmit input {
+  font-weight:      bold;
+}
+
+div.forms .formsubmit .okbox {
+  float:            left;
+  padding:          0;
+}
+
+div.forms .formsubmit .okbox input {
+  float:            left;
+}
+
+div.forms .formsubmit .okbox span {
+  float:            left;
+  margin:           3px 0 0 4px;
+}

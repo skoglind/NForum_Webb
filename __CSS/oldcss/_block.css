@@ -1,0 +1,1041 @@
+div.block {
+  font:             10px Verdana, Arial, Sans-Serif;
+  color:            #333;
+  background-color: #EEE;
+  border:           solid 1px #CCC;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+}
+
+div.dsg {
+  border-color:   #FFF !important;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+}
+
+.mborder {
+  /* border:           dotted 1px #CCC; */
+  border:           solid 1px #CCC;
+}
+
+div.timefly {
+  font:             bold 10px Arial;
+  text-align:       center;
+  position:         fixed;
+  top:              30px;
+  left:             15px;
+  padding:          8px;
+  width:            56px;
+  height:           12px;
+  background:       transparent url('/design/timer.png') no-repeat;
+}
+
+div.full_free_wb {
+  float:            left;
+  width:            485px;
+  padding:          15px 19px 15px 19px;
+  margin:           0 4px 6px 0;
+  overflow:         hidden;
+}
+
+div.full_free {
+  float:            left;
+  width:            740px;
+  padding:          15px 9px 15px 9px;
+  margin:           0 4px 6px 0;
+  overflow:         hidden;
+}
+
+div.pretend {
+  width:            720px;
+  padding:          15px 19px 15px 19px;
+}
+
+div.pretend_wb {
+  width:            485px;
+  padding:          15px 19px 15px 19px;
+}
+
+div.rowholder {
+  float:            left;
+  overflow:         hidden;
+}
+
+.list ul li.short {
+  width:            465px;
+  background-repeat:no-repeat;
+}
+
+.list ul li.textico {
+  background:       url('/design/icons/text.png') 0 5px no-repeat; 
+  padding-left:     24px;
+  width:            445px;
+}
+
+.list ul li.texticoL {
+  padding-left:     32px;
+  height:           32px;
+  width:            437px;
+}
+
+div.full_free_wb_sep {
+  float:            left;
+  width:            525px;
+  height:           2px;
+  margin:           2px 4px 8px 0;
+  background-color: #c7c7c7;
+  overflow:         hidden;
+}
+
+#enlargescreen {
+  position:         absolute;
+  display:          none;
+  top:              -500px;
+  left:             -500px;
+  width:            347px;
+  height:           255px;
+  z-index:          2;
+}
+
+#enlargescreen .left {
+  float:            left;
+  width:            6px;
+  height:           255px;
+  background:       transparent url('/design/img/enbox_left.png') no-repeat;
+}
+
+#enlargescreen .right {
+  float:            left;
+  width:            6px;
+  height:           255px;
+  background:       transparent url('/design/img/enbox_right.png') no-repeat;
+}
+
+#enlargescreen .center {
+  float:            left;
+  width:            330px;
+  height:           250px;
+  padding-bottom:   5px;
+  background:       #FFF url('/design/img/enbox_center.png') repeat-x;
+}
+
+#enlargescreen .center img {
+  width:            320px;
+  height:           240px;
+  margin:           5px;
+} 
+
+div.alignleft {
+  text-align:       left;
+}
+
+div.aligncenter {
+  text-align:       center;
+}
+
+div.alignright {
+  text-align:       right;
+}
+
+div.message {
+  text-align:       center;
+}
+
+div.alfalist {
+  text-align:       center;
+}
+
+div.alfalist p {
+  color:            #AAA;
+  margin:           2px 0 2px 0;
+  font-size:        10px;
+  font-family:      arial;
+  padding-left:     2px;
+  padding-right:    2px;
+}
+
+div.alfalist p a {
+}
+
+div.alfalist p a.c {
+  color:            #888;
+}
+
+div.paging {
+  text-align:       center;
+}
+
+div.paging p {
+  color:            #AAA;
+  margin:           2px 0 2px 0;
+}
+
+div.paging p a.c {
+  font-weight:      bold;
+}
+
+div.message p {
+  font:             11px Arial;
+  margin:           20px 0 20px 0;
+}
+
+div.textfill p {
+  width:            438px;
+  overflow:         hidden;
+  font:             13px Arial;
+  margin:           0 0 13px 0;
+}
+
+div.onerowtext p {
+  font:             10px Verdana;
+  margin:           2px 0 2px 0;
+}
+
+div.onerowtext p strong {
+  color:            #888;
+}
+
+div.onerowtext .selbox {
+  float:            left;
+}
+
+div.onerowtext .selbox .txt {
+  float:            left;
+  width:            50px;
+  font:             10px Arial;
+  padding:          3px 0 0 0;
+  text-align:       left;
+  overflow:         hidden;
+}
+
+div.onerowtext .selbox .select {
+  float:            left;
+  width:            80px;
+}
+
+div.imagerow {
+  width:            516px;
+  padding:          6px 4px 6px 5px;
+  overflow:         hidden;
+}
+
+div.cornertext {
+  font:             bold 11px Arial;
+  color:            #BBB;
+  padding:          5px 0 5px 0;
+}
+
+div.imagerow .img {
+  float:            left;
+  border:           solid 1px #CCC;
+  width:            82px;
+  margin:           0 1px 0 1px;
+  overflow:         hidden;
+}
+
+div.imagerow .img img {
+  float:            left;
+  width:            80px;
+  height:           80px;
+  cursor:           pointer;
+  border:           solid 1px #FFF;
+  background-color: #FFF;
+}
+
+div.imagerow .img .imgtext {
+  float:            left;
+  text-align:       center;
+  width:            78px;
+  font:             9px Arial;
+  padding:          2px 1px 2px 1px;
+  background-color: #E3E3E3;
+  overflow:         hidden;
+  border-bottom:    solid 1px #FFF;
+  border-left:      solid 1px #FFF;
+  border-right:     solid 1px #FFF;
+}
+
+div.thumbholder {
+  float:            left;
+  width:            480px; /* 476 */
+  padding:          2px;
+}
+
+div.thumbholder div.thumbnail {
+  float:            left;
+  padding:          2px; 
+  margin:           1px; 
+  border:           solid 1px #DDD; 
+  background-color: #FFF;
+  width:            52px;
+  height:           52px;
+  overflow:         hidden;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+div.thumbholder div.large {
+  width:            112px;
+  height:           112px;
+}
+
+div.thumbnail img {
+  float:            left; 
+  width:            50px; 
+  height:           50px;
+  border:           solid 1px #FFF;
+}
+
+div.thumbnail img.large {
+  width:            110px; 
+  height:           110px;
+}
+
+div.minilist {
+  float:            left;
+  margin:           2px 15px 2px 15px;
+  background-color: #FFF;
+  /* border:           dotted 1px #DDD; */
+  border:           solid 1px #CCC;
+  padding:          6px;
+}
+
+div.minilist p {
+  font:             11px Arial; 
+  color:            #444; 
+  padding:          6px 0 6px 0; 
+  margin:           0 10px 0 10px;
+}
+
+div.minilist ul {
+  float:            left;
+  list-style:       none;
+}
+
+div.minilist ul li {
+  float:            left;
+  padding:          4px;
+  cursor:           pointer;
+}
+
+div.minilist ul li.c {
+  background-color: #E3E3E3;
+}
+
+div.minilist ul li img {
+  float:            left;
+  margin:           1px 5px 0 0;
+}
+
+div.minilist ul li span {
+  float:            right;
+  color:            #666;
+  font:             10px Arial;
+}
+
+div.minilist ul li:hover {
+  background-color: #E3E3E3;
+}
+
+div.list {
+}
+
+div.list ul {
+  float:            left;
+  list-style:       none;
+  /* border:           dotted 1px #CCC; */
+  border:           solid 1px #CCC;
+  padding:          5px;
+  background-color: #FFF;
+  width:            473px;
+  margin:           5px 0 5px 0;
+}
+
+div.list ul li.w_icon {
+  width:            445px;
+  padding-left:     24px;
+  background-position: 3px 7px;
+}
+
+div.list ul li {
+  float:            left;
+  padding:          2px 4px 2px 4px;
+  border-bottom:    solid 1px #EEE;
+  background-color: #FFF;
+  width:            465px;
+}
+
+div.list ul li.c {
+  background-color: #EEE;
+}
+
+div.list ul li:hover {
+  background-color: #EEE;
+}
+
+div.list ul li .date {
+  float:            right;
+  text-align:       right;
+  padding:          6px 0 0 0;
+  width:            100px;
+}
+
+div.list ul li a {
+  float:            left;
+  width:            345px;
+}
+
+div.list ul li .category {
+  float:            left;
+  font:             9px Arial;
+  width:            345px;
+}
+
+div.block .granska {
+  overflow:         hidden;
+}
+
+div.block .granska p {
+  text-align:       left; 
+  color:            #333;
+}
+
+div.buttons {
+  border:           none;
+  background-color: transparent;
+  padding-top:      0;
+  text-align:       right;
+}
+
+div.buttons input {
+  height:           30px;
+}
+
+div.smallsize p {
+  font:             10px Arial;
+}
+
+div.pleft p {
+  text-align:       left;
+  color:            #666;
+}
+
+div.linelist {
+}
+
+div.linelist ul {
+  float:            left;
+  list-style:       none;
+  border:           solid 1px #CCC;
+  padding:          5px;
+  background-color: #FFF;
+  width:            473px;
+  margin:           5px 0 5px 0;
+}
+
+div.linelist ul li {
+  display:          block;
+  padding:          2px 4px 2px 4px;
+  border-bottom:    solid 1px #EEE;
+  background-color: #FFF;
+  width:            720px; 
+  color:            #333;
+  height:           13px;
+  overflow:         hidden;
+}
+
+div.linelist ul li span { /* EXTRATEXT */
+  color:            #AAA;
+}
+
+div.linelist ul li.c {
+  background-color: #EEE;
+}
+
+div.linelist ul li:hover {
+  background-color: #EEE;
+}
+
+div.linelist ul li .rg { /* REGION */
+  float:            left; 
+  width:            30px; 
+  overflow:         hidden; 
+  text-align:       left; 
+  color:            #AAA;
+  border-right:     solid 1px #DDD;
+  margin-right:     8px;
+}
+
+div.linelist ul li .ug { /* UTGIVARE */
+  float:            right; 
+  width:            125px; 
+  overflow:         hidden; 
+  text-align:       center; 
+  color:            #AAA;
+}
+
+div.linelist ul li .uv { /* UTVECKLARE */
+  float:            right; 
+  width:            125px; 
+  overflow:         hidden; 
+  text-align:       center; 
+  color:            #AAA;
+}
+
+div.linelist ul li .rd { /* RELASEDATUM */
+  float:            right; 
+  width:            60px; 
+  overflow:         hidden; 
+  text-align:       right;
+}
+
+div.thumblist {
+}
+
+div.thumblist ul {
+  float:            left;
+  list-style:       none;
+  /*border:           dotted 1px #CCC;*/
+  border:           solid 1px #CCC;
+  padding:          5px;
+  background-color: #FFF;
+  width:            473px;
+  margin:           5px 0 5px 0;
+}
+
+div.thumblist ul li {
+  display:          block;
+  height:           68px;
+  padding:          2px 4px 2px 4px;
+  border-bottom:    solid 1px #DDD;
+  background-color: #FFF;
+  width:            465px;
+}
+
+div.thumblist ul li.c {
+  background-color: #EEE;
+}
+
+div.thumblist ul li:hover {
+  background-color: #f0f5fe;
+}
+
+div.thumblist ul li .title {
+  float:            left;
+  height:           40px;
+  width:            310px;
+  padding:          14px 0 0 0;
+  overflow:         hidden;
+}
+
+div.thumblist ul li .data {
+  float:            right;
+  width:            66px;
+  height:           68px;
+  padding:          0px 4px 0px 4px;
+  text-align:       right;
+  border-left:      dotted 1px #DDD;
+  overflow:         hidden;
+}
+
+div.thumblist ul li .data .listbutton {
+  float:            left;
+  width:            66px;
+  height:           14px;
+  cursor:           pointer;
+}
+
+div.thumblist ul li .data .listbutton_no {
+  float:            left;
+  width:            66px;
+  height:           14px;
+  cursor:           default;
+}
+
+div.thumblist ul li .data img {
+  float:            right;
+  margin:           2px;
+  border:           0;
+}
+
+div.thumblist ul li .rows {
+  display:          block;
+  font:             9px Arial;
+  margin-bottom:    2px;
+}
+
+div.thumblist ul li .box {
+  float:            left;
+  width:            50px;
+  height:           50px;
+  overflow:         hidden;
+  padding:          4px;
+  margin:           4px 11px 4px 4px;
+  border:           solid 1px #CCC;
+  background-color: #FFF;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+div.thumblist ul li .box img {
+  float:            left;
+  width:            50px;
+  height:           50px;
+  cursor:           pointer;
+}
+
+div.speldata {
+  width:            470px;
+  padding:          2px;
+  float:            left;
+}
+
+div.speldata .fulldata {
+  width:            470px;
+  height:           176px;
+  float:            left;
+  overflow:         hidden;
+}
+
+div.speldata .icons {
+  width:            460px;
+  float:            left;
+  height:           22px;
+  padding:          5px;
+}
+
+div.speldata .icons img {
+  float:            left;
+  margin:           0 3px 0 3px;
+}
+
+div.speldata .fulldata h1 {
+  float:            left;
+  width:            460px;
+  border-bottom:    none;
+  font:             bold 16px Arial;
+  /* color:            #333; */
+  color:            #506b74;
+  padding:          5px 5px 0 5px;
+  margin:           0 0 0 0;
+  overflow:         hidden;
+}
+
+div.speldata .fulldata h1 span {
+  float:            right;
+  font:             10px Arial;
+  color:            #888;
+  padding:          3px 0 0 0;
+}
+    
+div.speldata .fulldata h2 {
+  float:            left;
+  width:            439px;
+  font:             bold 12px Arial;
+  color:            #888;
+  padding:          0 5px 0 26px;
+  margin:           0 0 0 0;
+}
+  
+div.spelbilder {
+  width:            54px;
+  float:            left;
+  padding:          2px 2px 2px 4px;
+}
+
+div.spelbilder div {
+  float:            left;
+  width:            52px;
+  padding:          0 0 0 0;
+  margin:           0 0 1px 0;
+  border:           solid 1px #CCC;
+}
+
+div.spelbilder div img {
+  float:            left;
+  width:            50px;
+  height:           45px;
+  cursor:           pointer;
+  border:           solid 1px #FFF;
+}
+
+div.spelbild {
+  width:            202px; 
+  float:            left;
+  padding:          0 0 0 0;
+  border:           solid 1px #CCC;
+  margin-top:       2px;
+}
+
+div.spelbild img {
+  float:            left;
+  width:            200px; 
+  height:           150px;
+  border:           solid 1px #FFF;
+}
+
+div.spelbild .bildtext {
+  float:            left;
+  width:            194px;
+  height:           28px;
+  padding:          15px 4px 2px 4px;
+  font:             bold 14px Arial;
+  text-align:       center;
+  background-color: #DDD;
+}
+
+div.spelbetyg {
+  width:            208px; 
+  float:            right;
+  padding:          6px 6px 0 6px;
+}
+
+div.spelbetyg .iblock {
+  width:            100px; 
+  float:            left;
+  padding:          2px 2px 0 2px;
+}
+
+div.spelbetyg .iblock img {
+  float:            left;
+  width:            16px;
+  height:           16px;
+}
+
+div.spelbetyg .userclick img {
+  cursor:           pointer;
+}
+
+div.spelbetyg .iblock span {
+  float:            left;
+  display:          block;
+  width:            100px;
+  font:             bold 10px Arial;
+  color:            #888;
+}
+
+div.spelshare {
+  float:            left; 
+  background-color: #FFF; 
+  padding:          8px; 
+  border:           solid 1px #DDD; 
+  margin:           0 4px 0 4px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+}
+
+div.table {
+  float:            left;
+  padding:          6px;
+  margin:           4px 8px 4px 22px;
+}
+
+div.table ul {
+  float:            left;
+  width:            410px;
+  list-style:       none;
+  border-top:       dotted 1px #BBB;
+}
+
+div.table ul li {
+  float:            left;
+  width:            410px;
+  padding:          4px 0 4px 0;
+  border-bottom:    dotted 1px #BBB;
+  font:             10px Verdana;
+}
+
+div.table ul li .lvl {
+  float:            left;
+  width:            100px;
+  color:            #666;
+}
+
+div.table ul li .data {
+  float:            left;
+  width:            300px;
+  font-weight:      bold;
+  color:            #333;
+}
+
+div.boxes {
+  float:            left; 
+  padding:          8px;
+  margin:           2px 6px 2px 15px; 
+  /* border:           dotted 1px #DDD; */
+  border:           solid 1px #CCC;
+  background-color: #FFF;
+}
+
+div.letter {
+  float:            left; 
+  padding:          5px;
+  margin:           5px 0 5px 0; 
+  border:           solid 1px #ffe398; 
+  background-color: #ffedbb;
+  width:            475px;
+  color:            #a6811c;
+}
+
+div.letter .letter_c1 {
+  float:            left;
+  width:            60px;
+  font:             bold 12px Arial;
+  padding:          2px;
+}
+
+div.letter .letter_c2 {
+  float:            left;
+  width:            407px;
+  font:             12px Arial;
+  padding:          2px;
+}
+
+div.textfalt {
+  float:            left; 
+  padding:          5px;
+  margin:           5px 0 5px 0; 
+  /* border:           dotted 1px #DDD; */
+  border:           solid 1px #CCC;
+  background-color: #FFF;
+  width:            475px;
+}
+
+div.textfalt p {
+  font:             12px Arial; 
+  color:            #444; 
+  padding:          6px 0 6px 0; 
+  margin:           0 10px 0 10px;
+}
+
+div.textfalt ul {
+  padding:          0;
+  margin:           6px 0 6px 25px;
+}
+
+div.boxes .imgbox {
+  float:            left;
+  margin:           5px;
+  padding:          2px;
+}
+
+div.boxes .imgbox img {
+  float:            left;
+}
+
+div.boxes .clickimg {
+  margin:           1px; 
+  padding:          2px; 
+  background-color: #FFF;
+  width:            48px;
+  height:           48px;
+}
+
+div.boxes .bigimg {
+  float:            left;
+  margin:           0 27px 0 27px;
+  width:            640px;
+  height:           480px;
+}
+
+div.boxes .bottombar {
+  float:            left;
+  width:            694px;
+  padding:          14px 0 14px 0;
+  background-color: #DDD;
+  color:            #333;
+  font:             bold 15px Arial;
+  text-align:       center;
+  margin-top:       8px;
+}
+
+div.boxes .bottombar .sizes {
+  float:            right;
+  font:             9px Verdana;
+  font-weight:      normal;
+  margin:           0 6px 0 0;
+}
+
+div.boxes .bottombar .sizes img {
+  float:            left; 
+  margin:           0 2px 0 2px;
+}
+
+.floatleft {
+  float:            left;
+}
+
+div.pline {
+  float:            left; 
+  margin:           6px 0 6px 0; 
+  height:           0; 
+  font-size:        0; 
+  border-bottom:    dotted 1px #CCC; 
+  width:            100%;
+}
+
+div.searchcloud {
+  float:            left;
+  margin:           4px 10px 4px 10px;
+  text-align:       center;
+  font:             10px Arial;
+  color:            #CCC;
+}
+
+div.searchcloud h1, h2, h3, h4 {
+  float:            left;
+  padding:          0;
+  margin:           0 1px 0 1px;
+  font-family:      Arial;
+  color:            #AAA;
+  border:           none;
+  font-weight:      normal;
+}
+
+div.searchcloud h1 {
+  font-size:        22px;
+  font-weight:      bold;
+  color:            #666;
+  padding:          1px 0 1px 0;
+}
+
+div.searchcloud h2 {
+  font-size:        18px;
+  font-weight:      bold;
+  color:            #888;
+  padding:          3px 0 3px 0;
+}
+
+div.searchcloud h3 {
+  font-size:        12px;
+  padding:          6px 0 6px 0;
+}
+
+div.searchcloud h4 {
+  font-size:        10px;
+  padding:          7px 0 7px 0;
+}
+
+div.jsFrameBox {
+  display:          none;
+  position:         fixed;
+  z-index:          1;
+  top:              30%;
+  left:             30%;   
+  border:           solid 1px #BBB;
+  background-color: #CCC;
+  width:            400px;
+  padding:          1px;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+}
+
+div.jsFrameBox .FrameBox_Title {
+  width:            388px;
+  padding:          4px 6px 4px 6px;
+  font:             bold 12px Arial;
+  color:            #333;
+  overflow:         hidden;
+}
+
+div.jsFrameBox .FrameBox_Buttons {
+  width:            392px;
+  padding:          4px;
+  text-align:       center;
+}
+
+div.jsFrameBox iframe {
+  background-color: #FFF;
+  border:           none;
+  width:            400px;
+  height:           150px;
+}
+
+div.calenderevents {
+  float:            left;
+  background-color: transparent;
+  border:           none;
+  width:            450px;
+  padding-top:      0;
+  margin-top:       0;
+}
+
+div.calenderevents h2 {
+  float:            left;
+  font:             bold 12px Arial;
+  color:            #999;
+  width:            450px;
+  margin:           0 0 5px 20px;
+}
+
+div.calenderevents ul {
+  float:            left;
+  list-style:       none;
+  width:            450px;
+  margin:           0 0 10px 30px;
+}
+
+div.calenderevents ul li {
+  padding:          2px;
+}
+
+div.frontpage_games .largeimg {
+  float:            left; 
+  width:            150px; 
+  height:           150px;
+  overflow:         hidden;
+}
+
+div.frontpage_games .largeimg a {
+  float:            left;
+  display:          block;
+  width:            100%;
+  height:           100%;
+}
+
+div.frontpage_games .allgames {
+  float:            left; 
+  width:            306px; 
+  height:           139px; 
+  overflow:         hidden; 
+  border-left:      dotted 1px #CCC; 
+  margin-left:      8px; 
+  padding-left:     8px;
+  padding-top:      11px;
+}
+
+div.frontpage_games .allgames .smallimg {
+  float:            left;
+  padding:          2px; 
+  margin:           1px 1px 8px 1px; 
+  border:           solid 1px #DDD; 
+  background-color: #FFF;
+  width:            52px;
+  height:           52px;
+  overflow:         hidden;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+div.frontpage_games .allgames .smallimg img {
+  float:            left; 
+  width:            50px; 
+  height:           50px;
+  border:           solid 1px #FFF;
+  cursor:           pointer;
+}
+
+div.frontpage_games .gamename {
+  float:            left; 
+  width:            463px; 
+  font:             bold 12px Trebuchet MS, Arial; 
+  color:            #FFF;
+  background-color: #666; 
+  margin-top:       4px; 
+  padding:          5px; 
+  overflow:         hidden;
+}
+
+div.frontpage_games .gamename a {
+  color:            #FFF;
+}

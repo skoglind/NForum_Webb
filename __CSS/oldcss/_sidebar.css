@@ -1,0 +1,238 @@
+.sidebar .box {
+  float:            left;
+  overflow:         hidden;
+  width:            214px;
+  margin-bottom:    5px;
+}
+
+.sidebar .line {
+  float:            left;
+  overflow:         hidden;
+  width:            214px;
+  height:           1px;
+  margin-bottom:    5px;
+  border-bottom:    solid 1px #FFF;
+  background-color: #CCC;
+  font-size:        0;
+}
+
+.sidebar .infolist ul {
+  float:            left;
+  list-style:       none;
+  margin:           2px 6px 2px 6px;
+}
+
+.sidebar .infolist  ul li {
+  float:            none;
+  display:          block;
+  padding:          4px 2px 0 22px;
+  height:           18px;
+  font:             10px Arial;
+  background-repeat: no-repeat;
+}
+
+.sidebar .infolist  ul li a {
+  color:            #679eb0;
+}
+
+.sidebar .infolist  ul li a:hover {
+  color:            #000;
+}
+
+.sidebar .box .title {
+  float:            left;
+  width:            198px;
+  background-color: #84B9CB;
+  /* border-bottom:    solid 1px #AAA; */
+  padding:          8px 8px 8px 8px;
+  margin:           0 0 0 0;
+  color:            #FFF;
+  font:             bold 10px Arial;
+  -moz-border-radius-topright: 8px;
+  -moz-border-radius-topleft: 8px;
+  -webkit-border-top-right-radius: 8px;
+  -webkit-border-top-left-radius: 8px;
+}
+
+.sidebar .box .undertitle {
+  float:            left;
+  width:            204px;
+  padding:          4px 5px 3px 5px;
+  margin:           0 0 10px 0;
+  font:             10px Arial;
+  background-color: #FFF;
+  color:            #000;
+  -moz-border-radius-bottomright: 8px;
+  -moz-border-radius-bottomleft: 8px;
+  -webkit-border-bottom-right-radius: 8px;
+  -webkit-border-bottom-left-radius: 8px;
+} 
+
+.sidebar .box .undertitle ul {
+  width:            204px;
+}
+
+.sidebar .box .undertitle ul li {
+  color:            #000;
+}
+
+.sidebar .box .undertitle hr {
+  float:            left;
+  color:            #FFF;
+  width:            203px;
+  margin:           0;
+  padding:          0;
+  font-size:        0;
+  height:           0;
+  border-top:       solid 1px #CCC;
+  border-left:      solid 1px #CCC;
+}
+
+.sidebar .box .filter hr {
+  float:            left;
+  color:            #FFF;
+  width:            203px;
+  margin:           7px 0 7px 0;
+  padding:          0;
+  font-size:        0;
+  height:           0;
+  border-top:       solid 1px #CCC;
+  border-left:      solid 1px #CCC;
+}
+
+.sidebar .box .undertitle p a {
+  color:            #679eb0;
+}
+
+.sidebar .box .undertitle p a:hover {
+  color:            #000;
+}
+
+.sidebar .box .undertitle .smilie {
+  border:           none;
+  margin:           2px 5px 2px 5px;
+  cursor:           pointer;
+}
+
+.sidebar .box .filter {
+  float:            left;
+  width:            204px;
+  padding:          4px 5px 3px 5px;
+  margin:           0 0 10px 0;
+  background-color: #FFF;
+  color:            #000;
+  -moz-border-radius-bottomright: 8px;
+  -moz-border-radius-bottomleft: 8px;
+  -webkit-border-bottom-right-radius: 8px;
+  -webkit-border-bottom-left-radius: 8px;
+}
+
+.sidebar .box .filter .sellist {
+  float:            left;
+  width:            102px;
+  font:             9px Arial;
+}
+
+.sidebar .box .filter .selbox {
+  float:            left;
+  width:            204px;
+  padding:          2px 0 2px 0;
+  overflow:         hidden;
+}
+
+.sidebar .box .filter .selbox .txt {
+  float:            left;
+  width:            70px;
+  font:             9px Arial;
+  overflow:         hidden;
+  padding:          3px 0 0 0;
+}
+
+.sidebar .box .filter .selbox select {
+  float:            left;
+  width:            132px;
+}
+
+.sidebar .box .filter .selbutton {
+  float:            left;
+  width:            204px;
+  padding:          2px 0 2px 0;
+  overflow:         hidden;
+}
+
+.sidebar .box .filter .selbutton input {
+  float:            right;
+  width:            70px;
+  font:             bold 10px Arial;
+  padding:          2px;
+}
+
+div.calender {
+  float:            right; 
+  width:            207px;
+  margin:           0 3px 0 3px;
+}
+
+div.calender a {
+  color:            #296173;
+  height:           100%;
+  width:            100%;
+  display:          block;
+}
+
+div.calender .cal_title {
+  float:            left; 
+  font:             bold 12px Arial; 
+  text-align:       center; 
+  padding:          0 0 0 0; 
+  background-color: #83b5c5;
+  color:            #FFF;
+}
+
+div.calender .cal_title .cal_chooser {
+  float:            left; 
+  padding:          3px 5px 7px 5px; 
+  width:            10px; 
+  background-color: #83b5c5;
+}
+
+div.calender .cal_title .cal_chooser:hover {
+  cursor:           pointer;
+  background-color: #bed9e2;
+}
+
+div.calender .cal_title .cal_text {
+  float:            left; 
+  padding:          5px 0 5px 0; 
+  width:            167px;
+}
+
+div.calender .cal_objects {
+  float:            left;
+  width:            203px;
+  background-color: #FFF;
+  padding:          4px 2px 2px 2px;
+}
+
+div.calender .cal_objects .cal_object {
+  float:            left; 
+  background-color: #EEE; 
+  margin:           1px; 
+  width:            27px; 
+  padding:          3px 0 3px 0; 
+  text-align:       center; 
+}
+
+div.calender .cal_objects .cal_object:hover {
+  background-color: #bed9e2;
+  cursor:           pointer;
+}
+
+div.calender .cal_objects .cal_month {
+  background-color: #DDD;
+}
+
+div.calender .cal_objects .cal_active {
+  font-weight:      bold;
+  background-color: #83b5c5;
+}

@@ -1,0 +1,25 @@
+<script language="vbscript" runat="server">
+
+  Sub Application_OnStart
+    Application("nfOnline") = 0
+  End Sub
+  
+  Sub Application_OnEnd
+  
+  End sub
+  
+  Sub Session_OnStart
+    Application.Lock
+      Application("nfOnline") = CLng(Application("nfOnline")) + 1
+    Application.UnLock
+  End Sub
+  
+  Sub Session_OnEnd
+    If CLng(Application.Value("nfOnline")) > 0 Then
+      Application.Lock
+        Application("nfOnline") = CLng(Application("nfOnline")) -1
+      Application.UnLock
+    End If
+  End Sub
+
+</script>
